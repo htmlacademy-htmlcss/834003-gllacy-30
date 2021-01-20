@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Руслан Станиславов](https://up.htmlacademy.ru/htmlcss/30/user/834003).
-* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima)
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 
 ---
