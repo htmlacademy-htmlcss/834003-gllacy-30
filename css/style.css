@@ -1,6 +1,61 @@
 body {
   position: relative;
   width: 1200px;
-  height: 2419px;
-  background-image: url(../img/Фон1.png);
+  height: auto;
+  background-image: url(../img/fons/Фон1.png);
+}
+/**Предложения **/
+.proposal {
+  width: 1200px;
+  height: auto;
+  border: 2px solid red;
+  color: white;
+}
+
+.raspberry {
+  width: 560px;
+  height: 229px;
+  border: 1px solid yellow;
+  border-radius: 16px;
+  background-image: url(../img/fons/Малиновый\ фон.png);
+  background-repeat: no-repeat;
+}
+
+.chocolate-bars {
+  width: 560px;
+  height: 229px;
+  border: 1px solid gainsboro;
+  border-radius: 16px;
+  background-image: url(../img/fons/Шоколадный\ фон.png);
+  background-repeat: no-repeat;
+}
+
+.ice {
+  width: 267px;
+  height: 267px;
+  border: 1px solid brown;
+}
+
+.orange {
+  background-image: url(../img/icons/Хит.png),
+                    url(../img/мороженое/Хит\ 1.png);
+  background-repeat: no-repeat;
+}
+
+.coffee {
+  background-image: url(../img/icons/Хит.png),
+                    url(../img/мороженое/хит\ 2.png);
+  background-repeat: no-repeat;
+}
+
+.strawberry {
+  background-image: url(../img/icons/Хит.png),
+                    url(../img/мороженое/хит\ 3.png);
+  background-repeat: no-repeat;
+}
+
+.cremebrulee {
+  background-image: url(../img/icons/Хит.png),
+                    url(../img/мороженое/хит\ 4.png);
+  background-repeat: no-repeat;
 }
