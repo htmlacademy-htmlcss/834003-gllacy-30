@@ -4,7 +4,7 @@ body {
   height: auto;
   background-image: url(../img/fons/Фон1.png);
 }
-/**Предложения **/
+/**Предложения **//**
 .proposal {
   width: 1200px;
   height: auto;
@@ -37,25 +37,26 @@ body {
 }
 
 .orange {
-  background-image: url(../img/icons/Хит.png),
+  background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/Хит\ 1.png);
   background-repeat: no-repeat;
 }
 
 .coffee {
-  background-image: url(../img/icons/Хит.png),
+  background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/хит\ 2.png);
   background-repeat: no-repeat;
 }
 
 .strawberry {
-  background-image: url(../img/icons/Хит.png),
+  background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/хит\ 3.png);
   background-repeat: no-repeat;
 }
 
 .cremebrulee {
-  background-image: url(../img/icons/Хит.png),
+  background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/хит\ 4.png);
   background-repeat: no-repeat;
 }
+**/
