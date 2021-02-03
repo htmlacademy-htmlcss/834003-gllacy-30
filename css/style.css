@@ -4,7 +4,7 @@
   height: auto;
   background-image: url(../img/fons/Фон1.png);
 }
-/**Предложения **//**
+/**Предложения**/
 .proposal {
   width: 1200px;
   height: auto;
@@ -30,33 +30,33 @@
   background-repeat: no-repeat;
 }
 
-.ice {
+.tovar-list li {
   width: 267px;
   height: 267px;
   border: 1px solid brown;
 }
 
-.orange {
+.item-ice-orange {
   background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/Хит\ 1.png);
   background-repeat: no-repeat;
 }
 
-.coffee {
+.item-ice-coffee {
   background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/хит\ 2.png);
   background-repeat: no-repeat;
 }
 
-.strawberry {
+.item-ice-strawberry {
   background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/хит\ 3.png);
   background-repeat: no-repeat;
 }
 
-.cremebrulee {
+.item-ice-cremebrulee {
   background-image: url(../img/icons/Хит.svg),
                     url(../img/мороженое/хит\ 4.png);
   background-repeat: no-repeat;
 }
-**/
+
