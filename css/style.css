@@ -1,13 +1,38 @@
 .page-body {
   position: relative;
   width: 1200px;
-  height: auto;
-  background-image: url(../img/fons/Фон1.png);
+  background-image: url(../img/fons/body-fon.png);
 }
+
+/**Слайд**/
+.gallery-iner {
+  position: relative;
+}
+
+.item {
+  position: relative;
+  width: 716px;
+  height: 716px;
+  border-radius: 50%;
+  background: rgba(215, 242, 227, 0.75);
+}
+
+.gallery-txt {
+  position: absolute;
+  left: 264px;
+  top: 398px;
+
+}
+
+.gallery-button {
+  position: absolute;
+  left: 280px;
+  top: 544px;
+}
+
 /**Предложения**/
 .proposal {
   width: 1200px;
-  height: auto;
   border: 2px solid red;
   color: white;
 }
@@ -29,34 +54,25 @@
   background-image: url(../img/fons/Шоколадный\ фон.png);
   background-repeat: no-repeat;
 }
-
+/**Список мороженого**/
 .tovar-list li {
+  position: relative;
   width: 267px;
-  height: 267px;
+  height: 324px;
   border: 1px solid brown;
+  float: left;
 }
 
-.item-ice-orange {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/Хит\ 1.png);
-  background-repeat: no-repeat;
+.xit {
+  position: absolute;
 }
 
-.item-ice-coffee {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/хит\ 2.png);
-  background-repeat: no-repeat;
+.tovar-list p {
+  position: absolute;
+  top: 180px;
+  left: 27px;
 }
 
-.item-ice-strawberry {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/хит\ 3.png);
-  background-repeat: no-repeat;
-}
 
-.item-ice-cremebrulee {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/хит\ 4.png);
-  background-repeat: no-repeat;
-}
+
 
