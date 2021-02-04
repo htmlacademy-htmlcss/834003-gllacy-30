@@ -42,7 +42,7 @@
   height: 229px;
   border: 1px solid yellow;
   border-radius: 16px;
-  background-image: url(../img/fons/Малиновый\ фон.png);
+  background-image: url(../img/fons/crimson-fon.png);
   background-repeat: no-repeat;
 }
 
@@ -51,7 +51,7 @@
   height: 229px;
   border: 1px solid gainsboro;
   border-radius: 16px;
-  background-image: url(../img/fons/Шоколадный\ фон.png);
+  background-image: url(../img/fons/chocolate-fon.png);
   background-repeat: no-repeat;
 }
 /**Список мороженого**/
