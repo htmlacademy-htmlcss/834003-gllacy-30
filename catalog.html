@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html lang="ru">
+ <html class="page" lang="ru">
    <head>
      <meta charset="utf-8">
      <title>HTML Academy: Глейси</title>
@@ -10,35 +10,39 @@
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/styles.css">
    </head>
-   <body>
-      <header>
-        <div>
+   <body class="page-body">
+      <header class="main-header">
+        <div class="main-header-logo">
           <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина">
         </div>
-          <ul>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
-          <input type="search">
-            <a href="blank.html">Вход</a>
-            <a href="#">2 товара</a>
+          <ul class="consumer-navigation">
+            <li><input type="search"></li>
+            <li><a href="blank.html">Вход</a></li>
+            <li><a href="#">2 товара</a></li>
+          </ul>
+        </nav>
       </header>
-      <main>
-        <div>
+      <main class="container">
+        <div class="info">
           <p>с 10 до 20,ежедневно</p>
           <a href="tel:88124502525"> 8 812 450-25-25</a>
         </div>
-        <ul>
+        <ul class="breadcrumbs">
          <li><a href="index.html">Главная</a></li>
-         <li><a href="">Каталог</a></li>
+         <li><a href="#">Каталог</a></li>
          <li><a href="#">Сливочное</a></li>
         </ul>
           <h1>Сливочное мороженое</h1>
-        <section>
+        <section class="choice">
           <h2>Выбор мороженого</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
-              <fieldset>
+              <fieldset class="sorting">
                 <legend>Сортировка:</legend>
                   <select name="popularity">
                     <option value="by popularity">по популярности</option>
@@ -47,11 +51,11 @@
                     <option value="fatness">по жирности</option>
                   </select>
               </fieldset>
-              <fieldset>
+              <fieldset class="price-sorting">
                 <legend>Цена: 100 ₽ – 500 ₽</legend>
                   <input type="range" min="100" max="500">
               </fieldset>
-              <fieldset>
+              <fieldset class="fat-sorting">
                 <legend>Жирность:</legend>
                   <input type="radio" name="greasy-ice-cream" value="zero" id="fat-zero">
                   <label for="fat-zero"> 0%</label>
@@ -62,7 +66,7 @@
                   <input type="radio" name="greasy-ice-cream" value="above-thirty" id="fat-above-thirty">
                   <label for="fat-above-thirty"> выше 30%</label>
               </fieldset>
-              <fieldset>
+              <fieldset class="sorting-of-fillers">
                 <legend>Наполнители:</legend>
                   <input type="checkbox" name="chocolate" id="chocolate-ice-cream" checked>
                     <label for="chocolate-ice-cream">шоколадные</label>
@@ -78,142 +82,130 @@
               <button type="submit">Применить</button>
             </form>
           </section>
-          <section>
+          <section class="tovar">
             <h2>Список мороженого</h2>
-              <ul>
+              <ul class="tovar-list">
                 <li>
+                  <img src="img/ice/ice catalog/ice1.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    310 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                        310 ₽/кг
-                    </p>
-                    <p>
                      Сливочное с апельсиновым<br>
                      джемом и цитрусовой стружкой
-                    </p>
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice2.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    380 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                        380 ₽/кг
-                    </p>
-                    <p>
-                     Сливочно-кофейное с кусочками<br>
+                    Сливочно-кофейное с кусочками<br>
                           <span>шоколада</span>
-                    </p>
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice3.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    355 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                       355 ₽/кг
-                    </p>
-                    <p>
-                      Сливочно-клубничное с<br>
-                     присыпкой из белого шоколада
-                    </p>
+                    Сливочно-клубничное с<br>
+                    присыпкой из белого шоколада
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice4.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    415 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                        415 ₽/кг
-                    </p>
-                    <p>
-                        Сливочное крем-брюле<br>
-                      с карамельной подливкой
-                    </p>
+                    Сливочное крем-брюле<br>
+                    с карамельной подливкой
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice5.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    325 ₽/кг
+                 </p>
                   <a href="product.html">
-                    <p>
-                        325 ₽/кг
-                    </p>
-                    <p>
-                      Сливочное с брусничным<br>
-                        <span>джемом</span>
-                    </p>
+                    Сливочное с брусничным<br>
+                      <span>джемом</span>
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice6.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    410 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                        410 ₽/кг
-                    </p>
-                    <p>
-                      Сливочно-черничное с цельными<br>
-                        <span>ягодами черники</span>
-                    </p>
+                    Сливочно-черничное с цельными<br>
+                      <span>ягодами черники</span>
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice7.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    315 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                        315 ₽/кг
-                    </p>
-                    <p>
-                      Сливочно-лимонное с<br>
-                      карамельной присыпкой
-                    </p>
+                    Сливочно-лимонное с<br>
+                    карамельной присыпкой
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice8.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    320 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                       320 ₽/кг
-                    </p>
-                    <p>
-                      Сливочное с шоколадной<br>
-                        <span>стружкой</span>
-                    </p>
+                    Сливочное с шоколадной<br>
+                      <span>стружкой</span>
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice9.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    440 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                       440 ₽/кг
-                    </p>
-                    <p>
-                      Сливочно-ванильное<br>
-                      с кусочками шоколада
-                    </p>
+                    Сливочно-ванильное<br>
+                    с кусочками шоколада
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice10.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    435 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                      435 ₽/кг
-                    </p>
-                    <p>
-                      Сливочное с ментоловым<br>
-                        <span>сиропом</span>
-                    </p>
+                    Сливочное с ментоловым<br>
+                      <span>сиропом</span>
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice11.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    355 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                      355 ₽/кг
-                    </p>
-                    <p>
-                      Сливочное с кусочками черного<br>
-                          <span>шоколада</span>
-                    </p>
+                    Сливочное с кусочками черного<br>
+                       <span>шоколада</span>
                   </a>
                 </li>
                 <li>
+                  <img src="img/ice/ice catalog/ice12.png" width="267" height="267" alt="мороженое">
+                  <p>
+                    420 ₽/кг
+                  </p>
                   <a href="product.html">
-                    <p>
-                      420 ₽/кг
-                    </p>
-                    <p>
-                      Сливочное с мятным сиропом
-                    </p>
+                    Сливочное с мятным сиропом
                   </a>
                 </li>
               </ul>
-              <ul>
+              <ul class="page-navigation">
                 <li>
                   <a>&lt;</a>
                 </li>
@@ -237,23 +229,23 @@
                 </li>
               </ul>
             </section>
-            <footer>
+            <footer class="main-footer">
               <h2>Давайте знакомиться</h2>
-              <ul>
+              <ul class="footer-social">
                 <li>
-                  <a href="#">Фейсбук</a>
+                  <a class="social-button" href="#">Фейсбук</a>
                 </li>
                 <li>
-                  <a href="#">В контакте</a>
+                  <a class="social-button" href="#">В контакте</a>
                 </li>
                 <li>
-                  <a href="#">Инстаграм</a>
+                  <a class="social-button" href="#">Инстаграм</a>
                 </li>
                 <li>
-                  <a href="#">Твиттер</a>
+                  <a class="social-button" href="#">Твиттер</a>
                 </li>
               </ul>
-              <ul>
+              <ul class="footer-documents">
                 <li>
                   <a href="#">Для поставщиков</a>
                 </li>
@@ -267,7 +259,7 @@
                   <a href="#">Экологические стандарты</a>
                 </li>
               </ul>
-                <div>
+                <div class="footer-copyright">
                   <p>Сделано в HTML Academy © 2019</p>
                 </div>
             </footer>
