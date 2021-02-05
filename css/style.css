@@ -15,6 +15,7 @@
   height: 716px;
   border-radius: 50%;
   background: rgba(215, 242, 227, 0.75);
+
 }
 
 .gallery-txt {
@@ -55,12 +56,22 @@
   background-repeat: no-repeat;
 }
 /**Список мороженого**/
-.tovar-list li {
+.tovar-list {
+  padding: 0px;
+}
+
+.items {
   position: relative;
   width: 267px;
   height: 324px;
   border: 1px solid brown;
   float: left;
+  margin-left: 26px;
+  list-style-type: none;
+}
+
+.ice-orange {
+  margin-left: 27px;
 }
 
 .xit {
