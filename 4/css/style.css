@@ -1,13 +1,39 @@
 .page-body {
   position: relative;
   width: 1200px;
-  height: auto;
-  background-image: url(../img/fons/Фон1.png);
+  background-color: #849d8f;
 }
+
+/**Слайд**/
+.gallery-iner {
+  position: relative;
+}
+
+.item {
+  position: relative;
+  width: 716px;
+  height: 716px;
+  border-radius: 50%;
+  background: rgba(215, 242, 227, 0.75);
+
+}
+
+.gallery-txt {
+  position: absolute;
+  left: 264px;
+  top: 398px;
+
+}
+
+.gallery-button {
+  position: absolute;
+  left: 280px;
+  top: 544px;
+}
+
 /**Предложения**/
 .proposal {
   width: 1200px;
-  height: auto;
   border: 2px solid red;
   color: white;
 }
@@ -17,7 +43,7 @@
   height: 229px;
   border: 1px solid yellow;
   border-radius: 16px;
-  background-image: url(../img/fons/Малиновый\ фон.png);
+  background-image: url(../img/fons/crimson-fon.png);
   background-repeat: no-repeat;
 }
 
@@ -26,37 +52,38 @@
   height: 229px;
   border: 1px solid gainsboro;
   border-radius: 16px;
-  background-image: url(../img/fons/Шоколадный\ фон.png);
+  background-image: url(../img/fons/chocolate-fon.png);
   background-repeat: no-repeat;
 }
+/**Список мороженого**/
+.tovar-list {
+  padding: 0px;
+}
 
-.tovar-list li {
+.items {
+  position: relative;
   width: 267px;
-  height: 267px;
+  height: 324px;
   border: 1px solid brown;
+  float: left;
+  margin-left: 26px;
+  list-style-type: none;
 }
 
-.item-ice-orange {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/Хит\ 1.png);
-  background-repeat: no-repeat;
+.ice-orange {
+  margin-left: 27px;
 }
 
-.item-ice-coffee {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/хит\ 2.png);
-  background-repeat: no-repeat;
+.xit {
+  position: absolute;
 }
 
-.item-ice-strawberry {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/хит\ 3.png);
-  background-repeat: no-repeat;
+.tovar-list p {
+  position: absolute;
+  top: 180px;
+  left: 27px;
 }
 
-.item-ice-cremebrulee {
-  background-image: url(../img/icons/Хит.svg),
-                    url(../img/мороженое/хит\ 4.png);
-  background-repeat: no-repeat;
-}
+
+
 
