@@ -39,8 +39,8 @@ img {
 
 /* Main navigation */
 
-.main-navigation {
-
+.site-navigation a {
+  color: var(--basic-white);
 }
 
 .site-navigation {
@@ -48,10 +48,15 @@ img {
   list-style: none;
 }
 
+.consumer-navigation a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
 .consumer-navigation {
   font-size: 14px;
   line-height: 16px;
-  text-decoration: none;
+  font-weight: 500;
   list-style: none;
 }
 
@@ -83,15 +88,26 @@ img {
 
 .gallery-txt {
   position: absolute;
-  left: 264px;
-  top: 398px;
-
+  left: 10px;
+  top: 300px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .gallery-button {
   position: absolute;
-  left: 280px;
+  left: 250px;
   top: 544px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  border-radius: 70px;
+  color: var(--basic-white);
 }
 
 /*Предложения*/
@@ -203,6 +219,14 @@ img {
 }
 
 /* Blog */
+
+.news {
+  width: 560px;
+  height: 220px;
+  background-image: url(../img/fons/strawberry-fon.png);
+  background-repeat: no-repeat;
+}
+
 .news h2 {
   font-weight: bold;
   font-size: 24px;
@@ -212,6 +236,13 @@ img {
 
 .news a {
   text-decoration-color: var(--basic-very-dark-gray);
+}
+
+.subscription {
+  width: 560px;
+  height: 220px;
+  background: url(../img/fons/substrate.png) no-repeat 5px,
+              url(../img/fons/mail-fon.png) no-repeat;
 }
 
 .subscription p {
@@ -234,12 +265,15 @@ img {
 .contacts {
   width: 1200px;
   height: 430px;
-  background-image: url(../img/fons/cart.png);
+  background: url(../img/icons/morozhenko-carta.svg) no-repeat 265px 135px,
+              url(../img/fons/cart.png) no-repeat;
 }
 
 .adres {
   width: 303px;
   height: 306px;
+  margin-left: 700px;
+
   border-radius: 16px;
   background-color: var(--basic-white);
   color: var(--basic-very-dark-gray);
@@ -264,4 +298,29 @@ img {
   line-height: 24px;
   color: var(--basic-very-dark-gray);
   text-decoration: none;
+}
+
+/* Footer */
+
+.footer-social,
+.footer-documents {
+  list-style-type: none;
+}
+
+.footer-documents a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.footer-documents span {
+  font-weight: bold;
+}
+
+.footer-copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 }
