@@ -1,3 +1,21 @@
+:root {
+  --basic-very-dark-gray: #323232;
+  --basic-dark-gray: #5a5a5a;
+  --basic-dark-grayish-cyan: #849d8f;
+  --basic-light-grayish-cyan: #d7f2e3;
+  --basic-light-grayish-yellow: #f8f7f4;
+  --basic-light-grayish-lime-green: #fbfcfb;
+  --basic-bright-blue: #2e88e4;/**курсор внутри поля**/
+  --basic-bright-red: #e74a35;
+  --basic-bright-red: #e84d37;/**корзина с товарами.выпадающий список наведение**/
+  --basic-light-bright-red: #f26843;
+  --basic-moderate-red: #d07058;
+  --basic-very-soft-red: #f6b5a5;
+  --basic-light-grayish-red: #fbded7;
+  --basic-pale-orange: #ffbc9e;
+  --basic-white: #ffffff;
+}
+
 .page-body {
   width: 1200px;
   background-color: #849d8f;

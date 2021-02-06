@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto: wght @ 400; 500; 700 & display=swap">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -72,45 +74,53 @@
               <img class="xit" src="img/icons/hit.svg" width="61" height="61" alt="хит">
               <img src="img/ice/ice-cream1.png" width="267" height="267" alt="мороженое">
               <p>
-                310 &#8381;/кг
+                310 &#8381;<span>/кг</span>
               </p>
+              <div class="items-link">
               <a href="product.html">
                     Сливочное с апельсиновым<br>
                     джемом и цитрусовой стружкой
               </a>
+              </div>
             </li>
             <li class="items ice-coffee">
               <img class="xit" src="img/icons/hit.svg" width="61" height="61" alt="хит">
               <img src="img/ice/ice-cream2.png" width="267" height="267" alt="мороженое">
               <p>
-                380 &#8381;/кг
+                380 &#8381;<span>/кг</span>
               </p>
+              <div class="items-link">
               <a href="product.html">
                 Сливочно-кофейное с кусочками<br>
                   шоколада
               </a>
+              </div>
             </li>
             <li class="items ice-strawberry">
               <img class="xit" src="img/icons/hit.svg" width="61" height="61" alt="хит">
               <img src="img/ice/ice-cream3.png" width="267" height="267" alt="мороженое">
               <p>
-                355 &#8381;/кг
+                355 &#8381;<span>/кг</span>
               </p>
+              <div class="items-link">
               <a href="product.html">
                 Сливочно-клубничное<br>
                 с присыпкой из белого шоколада
               </a>
+              </div>
             </li>
             <li class="items ice-cremebrulee">
               <img class="xit" src="img/icons/hit.svg" width="61" height="61" alt="хит">
               <img src="img/ice/ice-cream4.png" width="267" height="267" alt="мороженое">
               <p>
-                415 &#8381;/кг
+                415 &#8381;<span>/кг</span>
               </p>
+              <div class="items-link">
               <a href="product.html">
                   Сливочное крем-брюле<br>
                   с карамельной подливкой
               </a>
+              </div>
             </li>
           </ul>
         </section>
@@ -119,6 +129,7 @@
           производства на развес</h2>
           <ul class="features-list">
             <li class="features-item">
+              <img src="img/icons/morozhenko.svg" width="49" height="49" alt="мороженко">
               <p>
                 Все наше мороженое изготавливается на собственном<br>
                 производстве, с использованием современного оборудования<br>
@@ -126,6 +137,7 @@
               </p>
             </li>
             <li class="features-item">
+              <img src="img/icons/leaf.svg" width="49" height="49" alt="мороженко">
               <p>
                 Для приготовления мороженого используются настоящие<br>
                 сливки и молоко высочайшего качества. Все дополнительные<br>
@@ -134,6 +146,7 @@
               </p>
             </li>
             <li class="features-item">
+              <img src="img/icons/cow.svg" width="49" height="49" alt="мороженко">
               <p>
                 Закупка ингредиентов производится только у проверенных<br>
                 фермерских хозяйств и компаний, с которыми нас связывает<br>
@@ -141,6 +154,7 @@
               </p>
             </li>
             <li class="features-item">
+              <img src="img/icons/thermometer.svg" width="49" height="49" alt="мороженко">
               <p>
                 Доставка нашего мороженого до заказчиков осуществляется<br>
                 в специальном термопаке, который не дает мороженому<br>
@@ -150,12 +164,14 @@
           </ul>
         </section>
         <section class="blog">
-          <div>
+          <div class="news">
             <p>
               Новое в нашем блоге
             </p>
             <a href="#">
-            <h2>10 способов сервировки фруктовых щербетов к столу</h2>
+            <h2>10 способов сервировки<br>
+                фруктовых щербетов<br>
+                к столу</h2>
             </a>
           </div>
           <div class="subscription">
@@ -166,21 +182,21 @@
             </p>
             <form action="https://echo.htmlacademy.ru" method="post">
             <input type="email" name="email" placeholder="email@example.com">
-            <input type="submit" value="Отправить">
+            <input class="button" type="submit"  value="Отправить">
             </form>
           </div>
         </section>
         <section class="contacts">
          <h2>Карта</h2>
-          <div>
+          <div class="adres">
             <p>Адрес главного офиса<br>
              и офлайн-магазина:</p>
-            <p>ул. Большая Конюшенная,<br>
-             19/8, Санкт-Петербург</p>
+            <p><span>ул. Большая Конюшенная,<br>
+             19/8, Санкт-Петербург</span></p>
             <p>Для заказов по телефону:<br>
              <a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a><br>
              (с 10 до 20 ежедневно)</p>
-             <a href="blank.html">Форма обратной связи</a>
+             <a class="button" href="blank.html">Форма обратной связи</a>
           </div>
         </section>
       </main>
@@ -223,7 +239,7 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <input type="email" name="login" placeholder="email@example.com"><br>
           <input type="password" name="password" placeholder="••••••"><br>
-          <button type="submit">Войти</button>
+          <button class="button" type="submit">Войти</button>
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
         </form>
