@@ -4,6 +4,7 @@
   --basic-very-dark-gray: #323232;
   --basic-dark-gray: #5a5a5a;
   --basic-dark-grayish-cyan: #849d8f;
+  --basic-very-light-gray: #ededed;
   --basic-light-grayish-cyan: #d7f2e3;
   --basic-light-grayish-yellow: #f8f7f4;
   --basic-light-grayish-lime-green: #fbfcfb;
@@ -30,6 +31,10 @@
   font-weight: 700;
   color: var(--basic-white);
   background-color: var(--basic-dark-grayish-cyan);
+  background-position: top center;
+  background-image: url(../img/fons/fon-ice.png);
+  background-repeat: no-repeat;
+
 }
 
 img {
@@ -41,6 +46,28 @@ img {
 
 .site-navigation a {
   color: var(--basic-white);
+}
+
+.site-navigation a:hover {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-very-dark-gray);
+  background-color: var(--basic-white);
+  border-radius: 26px;
+  text-decoration: none;
+}
+
+.site-navigation a:active {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-very-dark-gray);
+  background-color: var(--basic-very-light-gray);
+  box-shadow: inset 0px 2px 1px #696969;
+  border-radius: 26px;
 }
 
 .site-navigation {
@@ -73,6 +100,7 @@ img {
 }
 
 /*Слайд*/
+
 .gallery-iner {
   position: relative;
 }
@@ -82,7 +110,7 @@ img {
   width: 716px;
   height: 716px;
   border-radius: 50%;
-  background: rgba(215, 242, 227, 0.75);
+
 }
 
 .gallery-txt {
@@ -108,6 +136,8 @@ img {
   border-radius: 70px;
   color: var(--basic-white);
 }
+
+
 
 /*Предложения*/
 .proposal {
@@ -252,13 +282,27 @@ img {
 }
 
 .button {
+  align-items: center;
+  padding: 16px 32px;
   background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   border-radius: 70px;
+  border: none;
   text-decoration: none;
   color: var(--basic-white);
 }
 
+.button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+              linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0px 2px 2px #AC1000;
+}
+
+.button:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: inset 0px 2px 2px #942718;
+  border-radius: 70px;
+}
 /* Maps */
 
 .contacts {
@@ -272,7 +316,7 @@ img {
   width: 303px;
   height: 306px;
   margin-left: 700px;
-
+  text-align: center;
   border-radius: 16px;
   background-color: var(--basic-white);
   color: var(--basic-very-dark-gray);
@@ -303,7 +347,7 @@ img {
 
 .footer-social,
 .footer-documents {
-  list-style-type: none;
+  list-style: none;
 }
 
 .footer-documents a {
