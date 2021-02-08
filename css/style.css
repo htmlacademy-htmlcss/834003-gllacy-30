@@ -105,7 +105,7 @@ img {
   position: relative;
 }
 
-.item {
+.gallery-ice-cream {
   position: relative;
   width: 716px;
   height: 716px;
@@ -137,9 +137,8 @@ img {
   color: var(--basic-white);
 }
 
-
-
 /*Предложения*/
+
 .proposal {
   width: 1200px;
   border: 2px solid red;
@@ -177,31 +176,16 @@ img {
   background-image: url(../img/fons/chocolate-fon.png);
   background-repeat: no-repeat;
 }
-/*Список мороженого*/
-.tovar-list {
-  padding: 0px;
-}
 
-.tovar-list p {
-  position: absolute;
-  font-size: 45px;
-  line-height: 45px;
-  top: 160px;
-}
+/*Список мороженого*/
 
 .items {
   position: relative;
-  float: left;
   width: 267px;
   height: 324px;
   border: 1px solid brown;
   margin-left: 26px;
   list-style-type: none;
-}
-
-.items span {
-  font-size: 30px;
-  line-height: 35px;
 }
 
 .items-link {
@@ -215,17 +199,26 @@ img {
   color: var(--basic-white);
 }
 
-.ice-orange {
-  margin-left: 27px;
+.items span {
+  font-size: 30px;
+  line-height: 35px;
 }
 
-.xit {
+.tovar-list {
+  padding: 0px;
+}
+
+.tovar-list p {
+  position: absolute;
+  font-size: 45px;
+  line-height: 45px;
+  top: 160px;
+}
+
+.hit {
   position: absolute;
 }
 
-.features {
-  clear: left;
-}
 
 /* Features */
 
@@ -303,7 +296,7 @@ img {
   box-shadow: inset 0px 2px 2px #942718;
   border-radius: 70px;
 }
-/* Maps */
+/* Map */
 
 .contacts {
   width: 1200px;
@@ -312,7 +305,7 @@ img {
               url(../img/fons/cart.png) no-repeat;
 }
 
-.adres {
+.address {
   width: 303px;
   height: 306px;
   margin-left: 700px;
@@ -322,14 +315,14 @@ img {
   color: var(--basic-very-dark-gray);
 }
 
-.adres p {
+.address p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
-.adres span {
+.address span {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
