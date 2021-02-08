@@ -35,6 +35,10 @@ a {
   color: var(--basic-white);
 }
 
+ul {
+  list-style: none;
+}
+
 /*Список мороженого*/
 
 .tovar-list {
@@ -70,4 +74,30 @@ a {
 .items span {
   font-size: 30px;
   line-height: 35px;
+}
+
+
+/* Footer */
+
+.footer-social,
+.footer-documents {
+  list-style: none;
+}
+
+.footer-documents a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.footer-documents span {
+  font-weight: bold;
+}
+
+.footer-copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 }
