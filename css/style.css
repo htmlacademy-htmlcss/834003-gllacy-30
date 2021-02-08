@@ -256,6 +256,17 @@ img {
 
 /*Список мороженого*/
 
+.tovar-list {
+  padding: 0px;
+}
+
+.tovar-list p {
+  position: absolute;
+  font-size: 45px;
+  line-height: 45px;
+  top: 160px;
+}
+
 .items {
   position: relative;
   width: 267px;
@@ -283,17 +294,6 @@ img {
 .items span {
   font-size: 30px;
   line-height: 35px;
-}
-
-.tovar-list {
-  padding: 0px;
-}
-
-.tovar-list p {
-  position: absolute;
-  font-size: 45px;
-  line-height: 45px;
-  top: 160px;
 }
 
 .hit {
