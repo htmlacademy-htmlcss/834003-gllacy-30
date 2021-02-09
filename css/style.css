@@ -79,6 +79,36 @@ img {
   border-radius: 26px;
 }
 
+ .dropdown-content a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  color: var(--basic-very-dark-gray);
+}
+
+.drop-down-list span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.dropdown-content a:hover {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  background: var(--basic-light-grayish-red);
+  border-radius: 0;
+}
+
+.dropdown-content a:active {
+  background: var(--basic-very-soft-red);
+}
+
 /*.dropdown {
   position: relative;
   display: inline-block;
@@ -276,7 +306,7 @@ img {
 }
 
 .items img {
-  border-radius: 50%;
+  border-radius:50%;
 }
 
 .items-link {
