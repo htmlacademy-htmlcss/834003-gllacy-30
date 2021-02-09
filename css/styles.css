@@ -76,6 +76,38 @@ ul {
   line-height: 35px;
 }
 
+/* Pagination */
+
+.pagination-item a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:active {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-very-dark-gray);
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-white);
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+
+
+
 
 /* Footer */
 
