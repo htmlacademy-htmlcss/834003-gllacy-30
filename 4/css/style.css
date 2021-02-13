@@ -388,7 +388,15 @@ img {
 }
 
 
+
 /* Features */
+
+.features {
+  width: 1146px;
+  border-radius: 16px;
+  background-image: url(../img/fons/vafly-fon.png);
+  background-repeat: no-repeat;
+}
 
 .features h2 {
   font-weight: 500;
@@ -443,6 +451,7 @@ img {
 }
 
 .button {
+  font: inherit;
   align-items: center;
   font-style: normal;
   font-weight: bold;
@@ -517,14 +526,6 @@ img {
 .footer-documents {
   list-style: none;
 }
-
-.social-button:hover svg {
-  fill: var(--basic-white);
-  stroke: var(--basic-dark-grayish-cyan);
-  stroke-width: 5%;
-}
-
-
 
 
 .footer-documents a {
