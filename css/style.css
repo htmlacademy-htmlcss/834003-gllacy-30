@@ -388,7 +388,16 @@ img {
 }
 
 
+
 /* Features */
+
+.features {
+  width: 1146px;
+  height: 306px;
+  border: 1px solid #AC1000;
+  border-radius: 16px;
+  background-image: url(../img/fons/vafly-fon.png);
+}
 
 .features h2 {
   font-weight: 500;
