@@ -6,6 +6,7 @@
   --basic-dark-grayish-cyan: #849d8f;
   --basic-very-light-gray: #ededed;
   --basic-light-grayish-cyan: #d7f2e3;
+  --basic-grayish-yellow: #d3d3d2;
   --basic-light-grayish-yellow: #f8f7f4;
   --basic-light-grayish-lime-green: #fbfcfb;
   --basic-bright-blue: #2e88e4;/*курсор внутри поля*/
@@ -98,7 +99,6 @@ img {
   border-radius: 4px;
 
 }
-
 
 
 .dropdown-content a {
@@ -248,6 +248,7 @@ img {
 
 
 .circle {
+  display: inline-block;
   border: 2px solid var(--basic-white);
   border-radius: 50%;
   height: 21px;
@@ -329,7 +330,7 @@ img {
   width: 560px;
   height: 229px;
   border-radius: 16px;
-  background-image: url(../img/fons/crimson-fon.png);
+  background-image: url(../img/fons/crimson-fon.jpg);
   background-repeat: no-repeat;
 }
 
@@ -337,7 +338,7 @@ img {
   width: 560px;
   height: 229px;
   border-radius: 16px;
-  background-image: url(../img/fons/chocolate-fon.png);
+  background-image: url(../img/fons/chocolate-fon.jpg);
   background-repeat: no-repeat;
 }
 
@@ -393,10 +394,12 @@ img {
 
 .features {
   width: 1146px;
-  border-radius: 16px;
-  background-image: url(../img/fons/vafly-fon.png);
+  background: url(../img/fons/vafly-fon.png);
+  background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 16px;
 }
+
 
 .features h2 {
   font-weight: 500;
@@ -421,8 +424,10 @@ img {
 .news {
   width: 560px;
   height: 220px;
-  background-image: url(../img/fons/strawberry-fon.png);
+  background-image: url(../img/fons/strawberry-fon.jpg);
   background-repeat: no-repeat;
+  border-radius: 16px;
+
 }
 
 .news h2 {
@@ -440,7 +445,9 @@ img {
   width: 560px;
   height: 220px;
   background: url(../img/fons/substrate.png) no-repeat 5px,
-              url(../img/fons/mail-fon.png) no-repeat;
+              url(../img/fons/mail-fon.jpg) no-repeat;
+  border-radius: 16px;
+
 }
 
 .subscription p {
@@ -520,6 +527,13 @@ img {
   text-decoration: none;
 }
 
+
+
+.pagination-list li {
+  display: inline-block;
+  margin: 10px;
+}
+
 /* Footer */
 
 .footer-social,
@@ -527,6 +541,11 @@ img {
   list-style: none;
 }
 
+.footer-social li,
+.breadcrumbs li {
+  display: inline-block;
+  margin-left: 5px;
+}
 
 .footer-documents a {
   font-style: normal;
@@ -547,3 +566,56 @@ img {
 }
 
 
+.modal-login {
+  width: 277px;
+  height: 214px;
+  background: var(--basic-light-grayish-yellow);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.modal h2 {
+  color: var(--basic-very-dark-gray);
+}
+
+.modal-login input {
+  width: 241px;
+  height: 44px;
+  background: var(--basic-white);
+  border: 1px solid var(--basic-grayish-yellow);
+  border-radius: 4px;
+}
+
+.modal-login .button {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.modal a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--basic-very-dark-gray);
+}
+
+.modal-contact {
+  width: 477px;
+  height: 441px;
+  background: var(--basic-light-grayish-yellow);
+  border-radius: 6px;
+}
+
+.modal-contact input {
+  width: 267px;
+  height: 44px;
+  background: var(--basic-white);
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 4px;
+}
+
+.modal-contact textarea {
+  background: var(--basic-white);
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 6px;
+}
