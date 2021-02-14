@@ -65,26 +65,26 @@
           <path d="M2.15561 3L0 0.666562L0.615764 0L3.38714 3L0.615764 6L0 5.33344L2.15561 3Z" fill="white"/>
           <path d="M4.76847 3L2.61286 0.666562L3.22863 0L6 3L3.22863 6L2.61286 5.33344L4.76847 3Z" fill="white"/>
          </svg></li>
-         <li><a href="#">Сливочное</a></li>
+         <li><span>Сливочное</span></li>
         </ul>
           <h1>Сливочное мороженое</h1>
-        <section class="choice">
+        <section class="choice-catalog">
           <h2>Выбор мороженого</h2>
-            <form method="get" action="https://echo.htmlacademy.ru">
-              <fieldset class="sorting">
+            <form method="properties-of-ice-cream-catalog" action="https://echo.htmlacademy.ru">
+              <fieldset class="choice-of-composition sorting-catalog">
                 <legend>Сортировка:</legend>
-                  <select name="popularity">
-                    <option value="by popularity">по популярности</option>
-                    <option value="cheap ones first">сначала недорогие</option>
-                    <option value="dear ones first">сначала дорогие</option>
+                  <select name="popularity-catalog">
+                    <option value="by-popularity">по популярности</option>
+                    <option value="cheap-ones-first">сначала недорогие</option>
+                    <option value="dear-ones-first">сначала дорогие</option>
                     <option value="fatness">по жирности</option>
                   </select>
               </fieldset>
-              <fieldset class="price-sorting">
+              <fieldset class="choice-of-composition price-sorting-catalog">
                 <legend>Цена: 100 ₽ – 500 ₽</legend>
                   <input type="range" min="100" max="500">
               </fieldset>
-              <fieldset class="fat-sorting">
+              <fieldset class="choice-of-composition fat-sorting-catalog">
                 <legend>Жирность:</legend>
                   <input type="radio" name="greasy-ice-cream" value="zero" id="fat-zero">
                   <label for="fat-zero"> 0%</label>
@@ -95,7 +95,7 @@
                   <input type="radio" name="greasy-ice-cream" value="above-thirty" id="fat-above-thirty">
                   <label for="fat-above-thirty"> выше 30%</label>
               </fieldset>
-              <fieldset class="sorting-of-fillers">
+              <fieldset class="choice-of-composition sorting-of-fillers-catalog">
                 <legend>Наполнители:</legend>
                   <input type="checkbox" name="chocolate" id="chocolate-ice-cream" checked>
                     <label for="chocolate-ice-cream">шоколадные</label>
