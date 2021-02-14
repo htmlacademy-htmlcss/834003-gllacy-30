@@ -167,6 +167,28 @@ img {
   background: var(--basic-white);
 }
 
+.consumer-navigation-search {
+  width: 341px;
+  height: 84px;
+  text-align: center;
+  background: var(--basic-light-grayish-yellow);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.consumer-navigation-search input {
+  width: 311px;
+  height: 44px;
+  margin-top: 20px;
+  background: var(--basic-white);
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-very-dark-gray);
+  border: 1px solid #D3D3D2;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .entrance,
 .basket {
   width: 92px;
@@ -480,7 +502,7 @@ img {
 
 .features {
   width: 1146px;
-  background: url(../img/fons/vafly-fon.png);
+  background: url(../img/fons/vafly-fon.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 16px;
