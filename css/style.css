@@ -221,6 +221,74 @@ img {
   text-align: center;
 }
 
+/* Breadcrumbs */
+
+.breadcrumbs a,
+.breadcrumbs span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--basic-white);
+}
+
+/* Choice-catalog */
+
+.choice-catalog {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.choice-of-composition {
+  display: inline-block;
+  width: 196px;
+  height: 36px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.popularity-catalog {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.price-sorting-catalog {
+  width: 218px;
+  height: 36px;
+}
+
+.fat-sorting-catalog {
+  width: 425px;
+  height: 36px;
+}
+
+.sorting-of-fillers-catalog {
+  width: 711px;
+  height: 36px;
+}
+
+.choice-catalog button {
+  width: 144px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  color: var(--basic-white);
+}
+
+.choice-catalog button:hover {
+  background: var(--basic-white);
+  color: var(--basic-very-dark-gray);
+}
+
+.choice-catalog button:focus {
+  box-shadow: inset 0px 2px 1px #696969;
+  border: none;
+  outline: none;
+}
+
 /* Container */
 
 .info p {
