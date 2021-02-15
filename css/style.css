@@ -189,6 +189,16 @@ img {
   border-radius: 4px;
 }
 
+.consumer-navigation-search input:hover {
+  border: 2px solid rgba(178, 178, 178, 0.52);
+  border-radius: 4px;
+}
+
+.consumer-navigation-search input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 4px;
+}
+
 .entrance,
 .basket {
   width: 92px;
