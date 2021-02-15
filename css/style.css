@@ -189,12 +189,20 @@ img {
   border-radius: 4px;
 }
 
-.consumer-navigation-search input:hover {
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea[name="comment"]:hover{
+  outline: none;
   border: 2px solid rgba(178, 178, 178, 0.52);
   border-radius: 4px;
 }
 
-.consumer-navigation-search input:focus {
+ input[type="text"]:focus,
+ input[type="email"]:focus,
+ input[type="password"]:focus,
+ textarea[name="comment"]:focus {
+  outline: none;
   border: 2px solid rgba(46, 136, 228, 0.52);
   border-radius: 4px;
 }
@@ -582,6 +590,8 @@ img {
   border-radius: 6px;
 }
 
+
+
 .button {
   font: inherit;
   align-items: center;
@@ -751,9 +761,6 @@ img {
   border: 2px solid rgba(178, 178, 178, 0.52);
 }
 
-.login-form input:focus {
-  border: 2px solid rgba(46, 136, 228, 0.52);
-}
 
 table {
   width: 539px;
