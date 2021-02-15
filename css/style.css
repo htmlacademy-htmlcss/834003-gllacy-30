@@ -755,13 +755,6 @@ textarea[name="comment"]:hover{
   border-radius: 6px;
 }
 
-.modal input:hover,
-.modal textarea:hover,
-.subscription-to-newsletter input:hover {
-  border: 2px solid rgba(178, 178, 178, 0.52);
-}
-
-
 table {
   width: 539px;
   height: 242px;
