@@ -207,6 +207,7 @@ textarea[name="comment"]:hover{
   border-radius: 4px;
 }
 
+
 .entrance,
 .basket {
   width: 92px;
@@ -500,6 +501,10 @@ textarea[name="comment"]:hover{
   margin-top: 8px;
 }
 
+.items-link a:hover{
+  color: var(--basic-pale-orange);
+}
+
 .items a {
   font-weight: 500;
   color: var(--basic-white);
@@ -553,7 +558,11 @@ textarea[name="comment"]:hover{
   background-image: url(../img/fons/strawberry-fon.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
+}
 
+.blog-news {
+  width: 287px;
+  height: 77px;
 }
 
 .news h2 {
@@ -565,6 +574,12 @@ textarea[name="comment"]:hover{
 
 .news a {
   text-decoration-color: var(--basic-very-dark-gray);
+}
+
+.news a:hover,
+.news h2:hover {
+  text-decoration-color: var(--basic-pale-orange);
+  color: var(--basic-pale-orange);
 }
 
 .subscription {
@@ -662,11 +677,20 @@ textarea[name="comment"]:hover{
   text-decoration: none;
 }
 
-
+/* Pagination */
 
 .pagination-list li {
   display: inline-block;
   margin: 10px;
+}
+
+.pagination-list p {
+  color: var(--basic-grayish-yellow);
+}
+
+.pagination-list a {
+  color: var(--basic-white);
+  text-decoration: none;
 }
 
 /* Footer */
