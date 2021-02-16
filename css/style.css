@@ -264,12 +264,15 @@ textarea[name="comment"]:hover{
 
 /* Breadcrumbs */
 
-.breadcrumbs a,
-.breadcrumbs span {
+.breadcrumbs a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: var(--basic-white);
+}
+
+.breadcrumbs a:hover {
+  color: var(--basic-pale-orange);
 }
 
 /* Choice-catalog */
