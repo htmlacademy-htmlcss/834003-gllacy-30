@@ -286,6 +286,7 @@ textarea[name="comment"]:hover{
 
 .choice-of-composition {
   display: inline-block;
+  vertical-align: middle;
   width: 196px;
   height: 36px;
   border: none;
