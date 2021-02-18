@@ -55,10 +55,6 @@ img {
   list-style: none;
 }
 
-.site-navigation li {
-  display: inline-block;
-}
-
 
 .site-navigation a {
 
@@ -92,10 +88,6 @@ img {
 
 /* Dropdown */
 
-.dropdown:hover,
-.dropdown-content:hover {
-
-}
 
 
 .dropdown-content {
@@ -458,13 +450,6 @@ textarea[name="comment"]:hover{
   line-height: 22px;
 }
 
-.proposal a {
-  font-size: 18px;
-  line-height: 24px;
-  text-decoration: none;
-  color: var(--basic-white);
-}
-
 .raspberry {
   width: 560px;
   height: 229px;
@@ -473,12 +458,24 @@ textarea[name="comment"]:hover{
   background-repeat: no-repeat;
 }
 
+.raspberry-button {
+  width: 164px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .chocolate-bars {
   width: 560px;
   height: 229px;
   border-radius: 16px;
   background-image: url(../img/fons/chocolate-fon.jpg);
   background-repeat: no-repeat;
+}
+
+.chocolate-bars-button {
+  width: 191px;
+  height: 48px;
 }
 
 /*Список мороженого*/
@@ -646,6 +643,11 @@ textarea[name="comment"]:hover{
   border-radius: 6px;
 }
 
+.button-subscription {
+  width: 130px;
+  height: 44px;
+}
+
 
 
 .button {
@@ -655,7 +657,7 @@ textarea[name="comment"]:hover{
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  padding: 15px 20px;
+  /*padding: 15px 20px;*/
   background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   border-radius: 70px;
@@ -716,6 +718,11 @@ textarea[name="comment"]:hover{
   line-height: 24px;
   color: var(--basic-very-dark-gray);
   text-decoration: none;
+}
+
+.contacts-button {
+  width: 253px;
+  height: 43px;
 }
 
 /* Pagination */
@@ -820,7 +827,9 @@ textarea[name="comment"]:hover{
   border-radius: 4px;
 }
 
-.modal-login .button {
+.modal-login-button {
+  width: 103px;
+  height: 44px;
   font-size: 18px;
   line-height: 16px;
 }
@@ -852,6 +861,11 @@ textarea[name="comment"]:hover{
   background: var(--basic-white);
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 6px;
+}
+
+.modal-contact-button {
+  width: 140px;
+  height: 44px;
 }
 
 
@@ -895,9 +909,9 @@ table {
   text-align: right;
 }
 
-.button-wrapper .button {
+.shopping-cart-button {
   width: 172px;
-  padding: 13px 15px;
+  height: 44px;
 }
 
 .text span {
