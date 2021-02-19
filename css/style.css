@@ -20,6 +20,12 @@
   --basic-white: #ffffff;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
 .page-body {
   position: relative;
   min-width: 960px;
@@ -36,6 +42,11 @@
   /*background-image: url(../img/fons/fon-ice.png);*/
   background-repeat: no-repeat;
 
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -43,7 +54,31 @@ img {
   height: auto;
 }
 
+/* Main header */
+
+.main-header {
+  display: grid;
+  margin-bottom: 70px;
+  outline: 5px solid greenyellow;
+  outline-offset: -5px;
+}
+
+/* Main header logo */
+
+.main-header-logo {
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+
 /* Main navigation */
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+}
+
 .main-navigation ul {
   padding: 0;
 }
@@ -51,6 +86,8 @@ img {
 .site-navigation {
   margin: 0;
   padding: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
   line-height: 18px;
   list-style: none;
 }
@@ -95,6 +132,7 @@ img {
   width: 143px;
   height: 171px;
   background: var(--basic-white);
+  list-style: none;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
 
@@ -153,6 +191,8 @@ img {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
   list-style: none;
 }
 
@@ -767,7 +807,12 @@ textarea[name="comment"]:hover{
   border-radius: 50%;
 }
 
-/* Footer */
+/* Main footer */
+
+.main-footer {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
 
 .footer-social,
 .footer-documents {
