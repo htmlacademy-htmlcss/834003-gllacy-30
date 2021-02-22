@@ -20,9 +20,15 @@
   --basic-white: #ffffff;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
 .page-body {
   position: relative;
-  min-width: 960px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -36,6 +42,11 @@
   /*background-image: url(../img/fons/fon-ice.png);*/
   background-repeat: no-repeat;
 
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -43,18 +54,52 @@ img {
   height: auto;
 }
 
+/* Main header */
+
+.main-header {
+  display: grid;
+  margin-bottom: 70px;
+}
+
+/* Main header logo */
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+
 /* Main navigation */
+
+.main-navigation-wrapper {
+  display: grid;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+  min-width: 1200px;
+  gap: 20px;
+  justify-self: center;
+}
+
 .main-navigation ul {
   padding: 0;
 }
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  column-gap: 10px;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
   line-height: 18px;
   list-style: none;
 }
 
+.dropdown {
+  margin-right: 20px;
+}
 
 .site-navigation a {
 
@@ -86,15 +131,91 @@ img {
   text-decoration: none;
 }
 
+/* Consumer-navigation */
+
+.consumer-navigation {
+  display: grid;
+  grid-template-columns:  min-content min-content min-content;
+  column-gap: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+  list-style: none;
+}
+
+.consumer-navigation-wrapper {
+  display: grid;
+  justify-content: right;
+}
+
+.consumer-navigation a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.navigation-search {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navigation-search:hover {
+  background: var(--basic-white);
+}
+
+.consumer-navigation-search {
+  width: 341px;
+  height: 84px;
+  text-align: center;
+  background: var(--basic-light-grayish-yellow);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.consumer-navigation-search input {
+  width: 311px;
+  height: 44px;
+  margin-top: 20px;
+  background: var(--basic-white);
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-very-dark-gray);
+  border: 1px solid #D3D3D2;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.consumer-navigation-info {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  justify-self: right;
+}
+
+.info p {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.info a {
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
 /* Dropdown */
-
-
 
 .dropdown-content {
 
   width: 143px;
   height: 171px;
   background: var(--basic-white);
+  list-style: none;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
 
@@ -137,58 +258,6 @@ img {
   border-radius: 0;
 }
 
-
-/* Consumer-navigation */
-
-
-
-.consumer-navigation a {
-  text-decoration: none;
-  color: var(--basic-white);
-}
-
-
-
-.consumer-navigation {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  list-style: none;
-}
-
-.navigation-search {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.navigation-search:hover {
-  background: var(--basic-white);
-}
-
-.consumer-navigation-search {
-  width: 341px;
-  height: 84px;
-  text-align: center;
-  background: var(--basic-light-grayish-yellow);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-}
-
-.consumer-navigation-search input {
-  width: 311px;
-  height: 44px;
-  margin-top: 20px;
-  background: var(--basic-white);
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--basic-very-dark-gray);
-  border: 1px solid #D3D3D2;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="password"]:hover,
@@ -212,6 +281,7 @@ textarea[name="comment"]:hover{
 .basket {
   width: 92px;
   height: 32px;
+
 }
 
 .navigation-entrance,
@@ -336,16 +406,9 @@ textarea[name="comment"]:hover{
 
 /* Container */
 
-.info p {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.info a {
-  font-size: 22px;
-  line-height: 24px;
-  text-decoration: none;
-  color: var(--basic-white);
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /*Слайд*/
@@ -436,7 +499,10 @@ textarea[name="comment"]:hover{
 /*Предложения*/
 
 .proposal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 1200px;
+  margin-bottom: 80px;
   border: 2px solid red;
 }
 
@@ -452,30 +518,32 @@ textarea[name="comment"]:hover{
 
 .raspberry {
   width: 560px;
-  height: 229px;
   border-radius: 16px;
   background-image: url(../img/fons/crimson-fon.jpg);
   background-repeat: no-repeat;
+  outline: 5px solid rgba(255, 217, 0, 0.959);
+  outline-offset: -5px;
 }
 
 .raspberry-button {
   width: 164px;
-  height: 48px;
+  padding: 10px 0;
   font-size: 18px;
   line-height: 24px;
 }
 
 .chocolate-bars {
   width: 560px;
-  height: 229px;
   border-radius: 16px;
   background-image: url(../img/fons/chocolate-fon.jpg);
   background-repeat: no-repeat;
+  outline: 5px solid rgba(255, 217, 0, 0.959);
+  outline-offset: -5px;
 }
 
 .chocolate-bars-button {
   width: 191px;
-  height: 48px;
+  padding: 10px 0;
 }
 
 /*Список мороженого*/
@@ -494,9 +562,7 @@ textarea[name="comment"]:hover{
 .items {
   position: relative;
   width: 293px;
-  height: 402px;
   border: 1px solid brown;
-  margin-left: 26px;
   list-style-type: none;
 }
 
@@ -592,7 +658,6 @@ textarea[name="comment"]:hover{
 
 .news {
   width: 560px;
-  height: 220px;
   background-image: url(../img/fons/strawberry-fon.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -600,10 +665,10 @@ textarea[name="comment"]:hover{
 
 .blog-news {
   width: 287px;
-  height: 77px;
 }
 
 .news h2 {
+  padding-bottom: 80px;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -638,14 +703,14 @@ textarea[name="comment"]:hover{
 
 .subscription-to-newsletter input {
   width: 368px;
-  height: 44px;
+  padding: 12px 0;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 6px;
 }
 
 .button-subscription {
   width: 130px;
-  height: 44px;
+  padding: 10px 0;
 }
 
 
@@ -691,8 +756,6 @@ textarea[name="comment"]:hover{
 
 .address {
   width: 303px;
-  height: 306px;
-  margin-left: 700px;
   text-align: center;
   border-radius: 16px;
   background-color: var(--basic-white);
@@ -722,7 +785,8 @@ textarea[name="comment"]:hover{
 
 .contacts-button {
   width: 253px;
-  height: 43px;
+  margin-bottom: 40px;
+  padding: 10px 0;
 }
 
 /* Pagination */
@@ -767,7 +831,14 @@ textarea[name="comment"]:hover{
   border-radius: 50%;
 }
 
-/* Footer */
+/* Main footer */
+
+.main-footer {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
 
 .footer-social,
 .footer-documents {
@@ -821,7 +892,7 @@ textarea[name="comment"]:hover{
 
 .modal-login input {
   width: 241px;
-  height: 44px;
+  padding: 12px 0;
   background: var(--basic-white);
   border: 1px solid var(--basic-grayish-yellow);
   border-radius: 4px;
@@ -829,7 +900,7 @@ textarea[name="comment"]:hover{
 
 .modal-login-button {
   width: 103px;
-  height: 44px;
+  padding: 12px 0;
   font-size: 18px;
   line-height: 16px;
 }
@@ -851,7 +922,7 @@ textarea[name="comment"]:hover{
 
 .modal-contact input {
   width: 267px;
-  height: 44px;
+  padding: 12px 0;
   background: var(--basic-white);
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 4px;
@@ -865,10 +936,10 @@ textarea[name="comment"]:hover{
 
 .modal-contact-button {
   width: 140px;
-  height: 44px;
+  padding: 12px 0;
 }
 
-
+/* Table */
 
 .basket-of-goods {
   width: 539px;
@@ -878,7 +949,7 @@ textarea[name="comment"]:hover{
   border-radius: 4px;
 }
 
-table {
+.basket-of-goods-table {
   width: 510px;
   border-collapse:separate;
   border-spacing: 10px;
