@@ -58,6 +58,7 @@ img {
 
 .main-header {
   display: grid;
+  min-width: 1200px;
   margin-bottom: 70px;
 }
 
@@ -78,7 +79,7 @@ img {
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr 1fr;
-  min-width: 1200px;
+  min-width: 1146px;
   gap: 20px;
   justify-self: center;
 }
@@ -91,6 +92,7 @@ img {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   column-gap: 10px;
+  margin: 0 auto;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
   line-height: 18px;
@@ -102,7 +104,7 @@ img {
 }
 
 .site-navigation a {
-
+  padding: 5px 10px;
   color: var(--basic-white);
 }
 
@@ -137,6 +139,7 @@ img {
   display: grid;
   grid-template-columns:  min-content min-content min-content;
   column-gap: 10px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -407,11 +410,15 @@ textarea[name="comment"]:hover{
 /* Container */
 
 .container {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
 }
 
 /*Слайд*/
+
+.slide {
+  min-width: 1146px;
+}
 
 .gallery-iner {
   position: relative;
@@ -501,9 +508,9 @@ textarea[name="comment"]:hover{
 .proposal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 1200px;
+  gap: 26px;
+  width: 1146px;
   margin-bottom: 80px;
-  border: 2px solid red;
 }
 
 .proposal h2 {
@@ -548,7 +555,15 @@ textarea[name="comment"]:hover{
 
 /*Список мороженого*/
 
+.tovar {
+  width: 1146px;
+  margin-bottom: 70px;
+}
+
 .tovar-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
   padding: 0px;
 }
 
@@ -561,12 +576,12 @@ textarea[name="comment"]:hover{
 
 .items {
   position: relative;
-  width: 293px;
-  border: 1px solid brown;
+  width: 267px;
   list-style-type: none;
 }
 
 .items:hover {
+  width: 293px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -629,6 +644,11 @@ textarea[name="comment"]:hover{
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 16px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 
