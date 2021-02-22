@@ -89,7 +89,7 @@ img {
 
 .site-navigation {
   display: grid;
-  grid-template-columns: min-content 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   column-gap: 10px;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
@@ -97,8 +97,8 @@ img {
   list-style: none;
 }
 
-.delivery {
-  margin-left: 25px;
+.dropdown {
+  margin-right: 20px;
 }
 
 .site-navigation a {
