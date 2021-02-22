@@ -936,7 +936,7 @@ textarea[name="comment"]:hover{
   height: 44px;
 }
 
-
+/* Table */
 
 .basket-of-goods {
   width: 539px;
@@ -946,7 +946,7 @@ textarea[name="comment"]:hover{
   border-radius: 4px;
 }
 
-table {
+.basket-of-goods-table {
   width: 510px;
   border-collapse:separate;
   border-spacing: 10px;
