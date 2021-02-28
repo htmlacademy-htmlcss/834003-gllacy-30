@@ -74,8 +74,9 @@
         <section class="choice-catalog">
           <h2>Выбор мороженого</h2>
             <form class="properties-of-ice-cream-catalog" method="POST" action="https://echo.htmlacademy.ru">
+
               <fieldset class="choice-of-composition sorting-catalog">
-                <legend>Сортировка:</legend>
+                <legend class="top-title">Сортировка:</legend>
                   <select name="popularity-catalog">
                     <option value="by-popularity">по популярности</option>
                     <option value="cheap-ones-first">сначала недорогие</option>
@@ -84,11 +85,11 @@
                   </select>
               </fieldset>
               <fieldset class="choice-of-composition price-sorting-catalog">
-                <legend>Цена: 100 ₽ – 500 ₽</legend>
+                <legend class="top-title">Цена: 100 ₽ – 500 ₽</legend>
                   <input type="range" min="100" max="500">
               </fieldset>
               <fieldset class="choice-of-composition fat-sorting-catalog">
-                <legend>Жирность:</legend>
+                <legend class="top-title">Жирность:</legend>
                   <input type="radio" name="greasy-ice-cream" value="zero" id="fat-zero">
                   <label for="fat-zero"> 0%</label>
                   <input type="radio" name="greasy-ice-cream" value="up-to-ten" id="fat-to-ten" checked>
@@ -99,7 +100,7 @@
                   <label for="fat-above-thirty"> выше 30%</label>
               </fieldset>
               <fieldset class="choice-of-composition sorting-of-fillers-catalog">
-                <legend>Наполнители:</legend>
+                <legend class="top-title">Наполнители:</legend>
                   <input type="checkbox" name="chocolate" id="chocolate-ice-cream" checked>
                     <label for="chocolate-ice-cream">шоколадные</label>
                     <input type="checkbox" name="sugar" id="powder" checked>
@@ -113,17 +114,17 @@
               </fieldset>
               <button type="submit">Применить</button>
             </form>
-          </section>
-          <section class="tovar">
-            <h2>Список мороженого</h2>
-              <ul class="tovar-list">
-                <li class="items ice-orange">
-                  <div class="normal-state">
-                    <img src="img/ice/ice-catalog/ice1.jpg" width="267" height="267" alt="мороженое">
-                    <p>
-                      310 &#8381;<span>/кг</span>
-                    </p>
-                  </div>
+        </section>
+        <section class="tovar">
+          <h2>Список мороженого</h2>
+            <ul class="tovar-list">
+              <li class="items ice-orange">
+                <div class="normal-state">
+                  <img src="img/ice/ice-catalog/ice1.jpg" width="267" height="267" alt="мороженое">
+                  <p>
+                    310 &#8381;<span>/кг</span>
+                  </p>
+                </div>
                   <div class="items-link">
                     <a href="product.html">
                        Сливочное с апельсиновым<br>
@@ -138,109 +139,149 @@
                     380 &#8381;<span>/кг</span>
                   </p>
                   </div>
-                  <a href="product.html">
-                    Сливочно-кофейное с кусочками<br>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочно-кофейное с кусочками<br>
                           шоколада
-                  </a>
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice3.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    355 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочно-клубничное с<br>
-                    присыпкой из белого шоколада
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice3.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      355 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочно-клубничное с<br>
+                      присыпкой из белого шоколада
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice4.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    415 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочное крем-брюле<br>
-                    с карамельной подливкой
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice4.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      415 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочное крем-брюле<br>
+                      с карамельной подливкой
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice5.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    325 &#8381;/кг
-                 </p>
-                  <a href="product.html">
-                    Сливочное с брусничным<br>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice5.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      325 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочное с брусничным<br>
                          джемом
-                  </a>
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice6.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    410 &#8381;/кг
-                  </p>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice6.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      410 &#8381;/кг
+                    </p>
+                  </div>
                   <a href="product.html">
                     Сливочно-черничное с цельными<br>
                       ягодами черники
                   </a>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice7.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    315 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочно-лимонное с<br>
-                    карамельной присыпкой
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice7.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      315 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочно-лимонное с<br>
+                      карамельной присыпкой
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice8.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    320 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочное с шоколадной<br>
-                      стружкой
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice8.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      320 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочное с шоколадной<br>
+                        стружкой
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice9.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    440 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочно-ванильное<br>
-                    с кусочками шоколада
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice9.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      440 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочно-ванильное<br>
+                      с кусочками шоколада
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice10.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    435 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочное с ментоловым<br>
-                      сиропом
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice10.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      435 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочное с ментоловым<br>
+                        сиропом
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice11.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    355 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочное с кусочками черного<br>
-                       шоколада
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice11.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      355 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочное с кусочками черного<br>
+                         шоколада
+                    </a>
+                  </div>
                 </li>
                 <li class="items">
-                  <img src="img/ice/ice-catalog/ice12.jpg" width="267" height="267" alt="мороженое">
-                  <p>
-                    420 &#8381;/кг
-                  </p>
-                  <a href="product.html">
-                    Сливочное с мятным сиропом
-                  </a>
+                  <div class="normal-state">
+                    <img src="img/ice/ice-catalog/ice12.jpg" width="267" height="267" alt="мороженое">
+                    <p>
+                      420 &#8381;/кг
+                    </p>
+                  </div>
+                  <div class="items-link">
+                    <a href="product.html">
+                      Сливочное с мятным сиропом
+                    </a>
+                  </div>
                 </li>
               </ul>
               <ul class="pagination-list">
