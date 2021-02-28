@@ -821,13 +821,22 @@ textarea[name="comment"]:hover{
 
 /* Pagination */
 
+.pagination {
+  display: grid;
+  width: 1146px;
+}
+
 .pagination-list {
+  display: grid;
+  width: 194px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-self: right;
   padding: 0;
+  list-style: none;
 }
 
 .pagination-list li {
-  display: inline-block;
-  margin: 10px;
+  justify-self: center;
 }
 
 .pagination-list a {
