@@ -224,7 +224,6 @@ img {
 
 }
 
-
 .dropdown-content a {
    display: block;
    padding: 8px 14px;
@@ -578,6 +577,7 @@ textarea[name="comment"]:hover{
   position: relative;
   width: 267px;
   list-style-type: none;
+  border: 5px solid #696969;
 }
 
 .items:hover {
@@ -597,7 +597,6 @@ textarea[name="comment"]:hover{
   text-align: center;
 }
 
-
 .items a  {
   font-weight: 500;
   font-size: 16px;
@@ -614,7 +613,7 @@ textarea[name="comment"]:hover{
 }
 
 .normal-state {
-  margin: 5px 15px 0 15px;
+  width: 267px;
 }
 
 .hit {
@@ -627,8 +626,6 @@ textarea[name="comment"]:hover{
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .hidden-button .button {
   width: 200px;
@@ -651,7 +648,6 @@ textarea[name="comment"]:hover{
   grid-template-columns: 1fr 1fr;
 }
 
-
 .features h2 {
   font-weight: 500;
   font-size: 24px;
@@ -662,8 +658,6 @@ textarea[name="comment"]:hover{
 .features-item {
   list-style: none;
 }
-
-
 
 .features-item p,
 .news p {
@@ -711,7 +705,6 @@ textarea[name="comment"]:hover{
   background: url(../img/fons/substrate.png) no-repeat 5px,
               url(../img/fons/mail-fon.jpg) no-repeat;
   border-radius: 16px;
-
 }
 
 .subscription p {
@@ -732,8 +725,6 @@ textarea[name="comment"]:hover{
   width: 130px;
   padding: 10px 0;
 }
-
-
 
 .button {
   font: inherit;
@@ -983,7 +974,6 @@ textarea[name="comment"]:hover{
   line-height: 16px;
   color: var(--basic-very-dark-gray);
 }
-
 
 .text-bottom {
   border-bottom: 1px solid #CACAC7;
