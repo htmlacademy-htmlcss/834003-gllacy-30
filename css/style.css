@@ -660,11 +660,15 @@ textarea[name="comment"]:hover{
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 16px;
+  margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .features-list {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+  padding: 0;
 }
 
 .features h2 {
@@ -678,6 +682,13 @@ textarea[name="comment"]:hover{
   list-style: none;
 }
 
+.features-item-list {
+  display: grid;
+  width: 539px;
+  grid-template-columns: min-content 1fr;
+  gap: 10px;
+}
+
 .features-item p,
 .news p {
   font-style: normal;
@@ -689,8 +700,18 @@ textarea[name="comment"]:hover{
 
 /* Blog */
 
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  width: 1146px;
+  margin-bottom: 80px;
+}
+
 .news {
   width: 560px;
+  padding: 0;
   background-image: url(../img/fons/strawberry-fon.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -720,8 +741,7 @@ textarea[name="comment"]:hover{
 
 .subscription {
   width: 560px;
-  height: 220px;
-  background: url(../img/fons/substrate.png) no-repeat 5px,
+  background: url(../img/fons/substrate.png) no-repeat 5px 6px,
               url(../img/fons/mail-fon.jpg) no-repeat;
   border-radius: 16px;
 }
