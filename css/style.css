@@ -450,17 +450,10 @@ textarea[name="comment"]:hover {
 .slide {
   width: 1146px;
   margin-bottom: 600px;
-
-}
-
-.gallery-slide {
-
-
 }
 
 .gallery-iner {
   position: relative;
-
 }
 
 .gallery-ice-cream {
@@ -486,6 +479,7 @@ textarea[name="comment"]:hover {
   line-height: 60px;
 }
 
+/* Листалка */
 
 .circle {
   display: inline-block;
@@ -539,8 +533,6 @@ textarea[name="comment"]:hover {
   border-radius: 70px;
   color: var(--basic-white);
 }
-
-
 
 /*Предложения*/
 
@@ -604,9 +596,6 @@ textarea[name="comment"]:hover {
 }
 
 .tovar-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
   padding: 0;
   margin: 0;
 }
@@ -628,7 +617,7 @@ textarea[name="comment"]:hover {
 
 .items:hover {
   width: 293px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--basic-border-bottom);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
@@ -1002,7 +991,8 @@ textarea[name="comment"]:hover {
   color: var(--basic-white);
 }
 
-.footer-documents a:hover {
+.footer-documents a:hover,
+.footer-copyright-link:hover {
   color: var(--basic-pale-orange);
 }
 
