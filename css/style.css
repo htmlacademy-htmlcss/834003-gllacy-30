@@ -38,8 +38,9 @@
   font-weight: 700;
   color: var(--basic-white);
   background-color: var(--basic-dark-grayish-cyan);
+  background-image: url(../img/slide/big-ice-cream.png),
+                    url(../img/fons/fon-ice.png);
   background-position: top center;
-  /*background-image: url(../img/fons/fon-ice.png);*/
   background-repeat: no-repeat;
 
 
@@ -58,8 +59,8 @@ img {
 
 .main-header {
   display: grid;
-  min-width: 1200px;
-  margin-bottom: 70px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* Main header logo */
@@ -79,7 +80,7 @@ img {
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr 1fr;
-  min-width: 1146px;
+  width: 1146px;
   gap: 20px;
   justify-self: center;
 }
@@ -372,10 +373,6 @@ textarea[name="comment"]:hover{
   border-radius: 20px;
 }
 
-.top-title {
-
-}
-
 .popularity-catalog {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -431,18 +428,26 @@ textarea[name="comment"]:hover{
 /*Слайд*/
 
 .slide {
-  min-width: 1146px;
+  width: 1146px;
+  margin-bottom: 600px;
+
+}
+
+.gallery-slide {
+
+
 }
 
 .gallery-iner {
   position: relative;
+
 }
 
 .gallery-ice-cream {
   position: relative;
   text-align: center;
   width: 716px;
-  height: 716px;
+  margin: 0 auto;
   border-radius: 50%;
 }
 
@@ -530,41 +535,45 @@ textarea[name="comment"]:hover{
 .proposal h2 {
   font-size: 35px;
   line-height: 41px;
+  margin: 16px;
 }
 
 .proposal p {
   font-size: 18px;
   line-height: 22px;
+  margin: 16px 16px 10px;
 }
 
 .raspberry {
+  display: grid;
   width: 560px;
   border-radius: 16px;
   background-image: url(../img/fons/crimson-fon.jpg);
   background-repeat: no-repeat;
-  outline: 5px solid rgba(255, 217, 0, 0.959);
-  outline-offset: -5px;
 }
 
 .raspberry-button {
   width: 164px;
   padding: 10px 0;
+  margin: 20px  22px 22px;
   font-size: 18px;
   line-height: 24px;
+  justify-self: end;
 }
 
 .chocolate-bars {
+  display: grid;
   width: 560px;
   border-radius: 16px;
   background-image: url(../img/fons/chocolate-fon.jpg);
   background-repeat: no-repeat;
-  outline: 5px solid rgba(255, 217, 0, 0.959);
-  outline-offset: -5px;
 }
 
 .chocolate-bars-button {
   width: 191px;
   padding: 10px 0;
+  margin: 20px  22px 22px;
+  justify-self: end;
 }
 
 /*Список мороженого*/
@@ -657,7 +666,7 @@ textarea[name="comment"]:hover{
 .features {
   width: 1146px;
   background: url(../img/fons/vafly-fon.jpg);
-  background-size: contain;
+  background-size: contai;
   background-repeat: no-repeat;
   border-radius: 16px;
   margin: 0 auto;
@@ -666,7 +675,6 @@ textarea[name="comment"]:hover{
 
 .features-list {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
   padding: 0;
 }
@@ -676,6 +684,8 @@ textarea[name="comment"]:hover{
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-very-dark-gray);
+  padding: 24px 131px 0 20px;
+  margin: 0;
 }
 
 .features-item {
@@ -685,6 +695,7 @@ textarea[name="comment"]:hover{
 .features-item-list {
   display: grid;
   width: 539px;
+  margin: 0;
   grid-template-columns: min-content 1fr;
   gap: 10px;
 }
@@ -893,8 +904,10 @@ textarea[name="comment"]:hover{
 /* Main footer */
 
 .main-footer {
-  width: 1200px;
+  display: grid;
+  width: 1144px;
   margin: 0 auto;
+  margin-top: 18px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
 }
@@ -902,6 +915,8 @@ textarea[name="comment"]:hover{
 .footer-social,
 .footer-documents {
   list-style: none;
+  outline: 2px solid #2e88e4;
+  outline-offset: -2px;
 }
 
 .footer-social li,
@@ -934,6 +949,8 @@ textarea[name="comment"]:hover{
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
+  outline: 2px solid #F26843;
+  outline-offset: -2px;
 }
 
 
