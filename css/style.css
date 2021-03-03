@@ -50,6 +50,27 @@
   align-content: start;
 }
 
+.page-body-catalog {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-grayish-cyan);
+  background-repeat: no-repeat;
+
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -580,14 +601,15 @@ textarea[name="comment"]:hover{
 
 .tovar {
   width: 1146px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .tovar-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .tovar-list p {
@@ -600,8 +622,9 @@ textarea[name="comment"]:hover{
 .items {
   position: relative;
   width: 267px;
-  list-style-type: none;
-  border: 1px solid #696969;
+  list-style: none;
+  outline: 1px solid #696969;
+  outline-offset: -1px;
 }
 
 .items:hover {
@@ -666,16 +689,15 @@ textarea[name="comment"]:hover{
 .features {
   width: 1146px;
   background: url(../img/fons/vafly-fon.jpg);
-  background-size: contai;
   background-repeat: no-repeat;
   border-radius: 16px;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .features-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
   padding: 0;
 }
 
@@ -684,12 +706,13 @@ textarea[name="comment"]:hover{
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-very-dark-gray);
-  padding: 24px 131px 0 20px;
+  padding: 24px 131px 7px 20px;
   margin: 0;
 }
 
 .features-item {
   list-style: none;
+  margin-left: 20px;
 }
 
 .features-item-list {
@@ -707,6 +730,7 @@ textarea[name="comment"]:hover{
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-very-dark-gray);
+  margin: 15px 0;
 }
 
 /* Blog */
@@ -729,11 +753,18 @@ textarea[name="comment"]:hover{
 }
 
 .blog-news {
-  width: 287px;
+  width: 300px;
+  padding-bottom: 30px;
+}
+
+.news p {
+  margin: 23px 0 15px 20px;
 }
 
 .news h2 {
-  padding-bottom: 80px;
+  margin: 0;
+  margin-left: 20px;
+  padding-bottom: 40px;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -757,11 +788,20 @@ textarea[name="comment"]:hover{
   border-radius: 16px;
 }
 
+.subscription h2 {
+  margin: 0;
+}
+
 .subscription p {
+  margin: 10px 16px 47px 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark-gray);
+}
+
+.subscription-to-newsletter {
+  margin: 0 0 30px 20px;
 }
 
 .subscription-to-newsletter input {
@@ -773,6 +813,7 @@ textarea[name="comment"]:hover{
 
 .button-subscription {
   width: 130px;
+  margin-left: 10px;
   padding: 10px 0;
 }
 
@@ -875,8 +916,6 @@ textarea[name="comment"]:hover{
   text-decoration: none;
 }
 
-
-
 .pagination-item a:hover {
   background: rgba(255, 255, 255, 0.2);
   padding: 5px 10px;
@@ -905,18 +944,34 @@ textarea[name="comment"]:hover{
 
 .main-footer {
   display: grid;
-  width: 1144px;
+  width: 1200px;
   margin: 0 auto;
-  margin-top: 18px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
+}
+
+.main-footer h2 {
+  margin: 0;
+}
+
+.main-footer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-social,
 .footer-documents {
   list-style: none;
-  outline: 2px solid #2e88e4;
-  outline-offset: -2px;
+  margin: 0;
+}
+
+.footer-social {
+  margin: 15px 0 35px 29px;
+  padding: 0;
+}
+
+.footer-documents {
+  margin: 15px 0 32px 0;
 }
 
 .footer-social li,
@@ -926,7 +981,17 @@ textarea[name="comment"]:hover{
 }
 
 .footer-documents {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+}
+
+.footer-documents-list-item {
+  padding-left: 20px;
+}
+
+.footer-documents svg {
+  padding-right: 5px;
 }
 
 .footer-documents a {
@@ -946,11 +1011,19 @@ textarea[name="comment"]:hover{
 }
 
 .footer-copyright {
+  margin-right: 27px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  outline: 2px solid #F26843;
-  outline-offset: -2px;
+  justify-self: end;
+}
+
+.footer-copyright p {
+  margin: 8px  0 26px 0;
+}
+
+.footer-copyright-link {
+  color: var(--basic-white);
 }
 
 
