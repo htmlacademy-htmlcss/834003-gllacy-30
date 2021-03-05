@@ -42,7 +42,7 @@
   color: var(--basic-white);
 
   background: url(../img/slide/big-ice-cream.png) 50% -30%,
-              url(../img/fons/fon-ice.png) top center,
+              url(../img/fons/fon-ice-body.png) top center,
               var(--basic-dark-grayish-cyan);
   background-repeat: no-repeat;
 
@@ -104,6 +104,7 @@ img {
   display: grid;
   grid-template-columns: min-content 1fr 1fr;
   width: 1146px;
+  margin-top: 9px;
   gap: 20px;
   justify-self: center;
 }
@@ -449,7 +450,8 @@ textarea[name="comment"]:hover {
 
 .slide {
   display: grid;
-  width: 1200px;
+  width: 1146px;
+  margin: 0 auto;
   margin-bottom: 41px;
 }
 
@@ -591,9 +593,10 @@ textarea[name="comment"]:hover {
 
 .proposal {
   display: grid;
+  width: 1146px;
   grid-template-columns: 1fr 1fr;
   gap: 26px;
-  width: 1146px;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 
@@ -646,6 +649,7 @@ textarea[name="comment"]:hover {
 .tovar {
   display: grid;
   width: 1146px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -730,6 +734,7 @@ textarea[name="comment"]:hover {
   background: url(../img/fons/vafly-fon.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -780,6 +785,7 @@ textarea[name="comment"]:hover {
   grid-template-columns: 1fr 1fr;
   gap: 26px;
   width: 1146px;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 
@@ -985,8 +991,6 @@ textarea[name="comment"]:hover {
   display: grid;
   width: 1200px;
   margin: 0 auto;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .main-footer h2 {
