@@ -30,7 +30,7 @@
 }
 
 .page-body {
-  position: relative;
+  /*position: relative;*/
   min-width: 1200px;
   margin: 0;
   padding: 0;
@@ -40,10 +40,10 @@
   line-height: 22px;
   font-weight: 700;
   color: var(--basic-white);
-  background-color: var(--basic-dark-grayish-cyan);
-  background-image: url(../img/slide/big-ice-cream.png),
-                    url(../img/fons/fon-ice.png);
-  background-position: top center;
+
+  background: url(../img/slide/big-ice-cream.png) 50% -30%,
+              url(../img/fons/fon-ice.png) top center,
+              var(--basic-dark-grayish-cyan);
   background-repeat: no-repeat;
 
 
@@ -448,8 +448,13 @@ textarea[name="comment"]:hover {
 /*Слайд*/
 
 .slide {
+  display: grid;
   width: 1200px;
-  margin-bottom: 400px;
+  margin-bottom: 41px;
+}
+
+.slide h2 {
+  margin-bottom: 140px;
 }
 
 .gallery-slide {
@@ -464,15 +469,38 @@ textarea[name="comment"]:hover {
   margin: 0 auto;
 }
 
+.gallery-ice-cream-inner {
+  display: grid;
+  width: 672px;
+  margin-left: 10px;
+}
+
 .gallery-inner h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 60px;
+  margin-bottom: 7px;
+}
+
+.sideways {
+  padding-left: 10px;
 }
 
 .gallery-ice-cream {
   display: grid;
+  width: 716px;
+}
+.gallery-control {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.gallery-indicators {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 20px;
 }
 /*
 .gallery-iner {
@@ -507,7 +535,6 @@ textarea[name="comment"]:hover {
 /* Листалка */
 
 .circle {
-  display: inline-block;
   border: 2px solid var(--basic-white);
   border-radius: 50%;
   height: 21px;
@@ -546,7 +573,7 @@ textarea[name="comment"]:hover {
   /*position: absolute;
   left: 250px;
   top: 544px;*/
-  margin: 20px 10px;
+  margin-right: 40px;
   padding: 10px 30px;
   justify-self: center;
   font-weight: bold;
