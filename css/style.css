@@ -10,9 +10,13 @@
   --basic-light-grayish-yellow: #f8f7f4;
   --basic-light-grayish-lime-green: #fbfcfb;
   --basic-bright-blue: #2e88e4;/*курсор внутри поля*/
+  --basic-strong-red: #d84732;
+  --basic-bright-bright-red: #e1613e;
   --basic-bright-red: #e74a35;
   --basic-bright-red: #e84d37;/*корзина с товарами.выпадающий список наведение*/
   --basic-light-bright-red: #f26843;
+  --basic-soft-red: #f58669;
+  --basic-soft-soft-red: #ec6f5e;
   --basic-moderate-red: #d07058;
   --basic-very-soft-red: #f6b5a5;
   --basic-light-grayish-red: #fbded7;
@@ -40,10 +44,8 @@
   line-height: 22px;
   font-weight: 700;
   color: var(--basic-white);
-
-  background: url(../img/slide/big-ice-cream.png) no-repeat 50% -30%,
-              url(../img/fons/fon-ice-body.png) no-repeat top center,
-              var(--basic-dark-grayish-cyan);
+ /*background: url(../img/slide/slider-item-1.png) no-repeat top center,
+              var(--basic-dark-grayish-cyan);*/
 
 
   min-height: 100%;
@@ -77,12 +79,28 @@ img {
   height: auto;
 }
 
+/*   Global wrapping   */
+
+.site-wrapper {
+  min-width: 1200px;
+  background-color: var(--basic-dark-grayish-cyan);
+  background-image: url(../img/slide/slider-item-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*   Content wrapper   */
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Main header */
 
 .main-header {
   display: grid;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 /* Main header logo */
@@ -440,101 +458,88 @@ textarea[name="comment"]:hover {
 
 /* Container */
 
-.container {
+.main-container {
   min-width: 1200px;
   margin: 0 auto;
 }
 
 /*Слайд*/
 
-.slide {
-  display: grid;
+.slider {
+  position: relative;
   width: 1146px;
   margin: 0 auto;
   margin-bottom: 41px;
-}
-
-.slide h2 {
-  margin-bottom: 140px;
-}
-
-.gallery-slide {
-  display: grid;
-  width: 1146px;
-  margin: 0 auto;
-}
-
-.gallery-inner {
-  display: grid;
-  width: 716px;
-  margin: 0 auto;
-}
-
-.gallery-ice-cream-inner {
-  display: grid;
-  width: 672px;
-  margin-left: 10px;
-}
-
-.gallery-inner h2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 60px;
-  margin-bottom: 7px;
-}
-
-.sideways {
-  padding-left: 10px;
-}
-
-.gallery-ice-cream {
-  display: grid;
-  width: 716px;
-}
-.gallery-control {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-}
-
-.gallery-indicators {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
-  margin-top: 20px;
-}
-/*
-.gallery-iner {
-  position: relative;
-}
-
-.gallery-ice-cream {
-  position: relative;
+  padding-top: 310px;
   text-align: center;
-  width: 716px;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide-title {
+  width: 700px;
   margin: 0 auto;
-  border-radius: 50%;
-}
-
-.gallery-txt {
-  position: absolute;
-  width: inherit;
-  top: 67%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.gallery-txt h2 {
-  font-style: normal;
-  font-weight: bold;
+  margin-bottom: 27px;
   font-size: 60px;
   line-height: 60px;
+  font-weight: 800;
 }
-*/
 
+.slide-button {
+  display: inline-block;
+  padding: 12px 44px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: var(--basic-light-bright-red);
+  background: linear-gradient(to bottom, var(--basic-light-bright-red), var(--basic-bright-red));
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+}
+
+.slide-button:hover {
+  background: linear-gradient(to bottom, var(--basic-soft-red), var(--basic-soft-soft-red));
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slide-button:active {
+  background: linear-gradient(to bottom, var(--basic-strong-red), var(--basic-bright-bright-red));
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  width: 79px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 /* Листалка */
-
+/*
 .circle {
   border: 2px solid var(--basic-white);
   border-radius: 50%;
@@ -557,37 +562,7 @@ textarea[name="comment"]:hover {
 .current-slide-item:focus {
   background: var(--basic-white);
 }
-
-
-/*
-.gallery-txt {
-  position: absolute;
-  text-align: center;
-  left: 10px;
-  top: 300px;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 60px;
-}
 */
-.gallery-button {
-  /*position: absolute;
-  left: 250px;
-  top: 544px;*/
-  margin-right: 40px;
-  padding: 10px 30px;
-  justify-self: center;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-  border-radius: 70px;
-  color: var(--basic-white);
-}
-
 /*Предложения*/
 
 .proposal {
