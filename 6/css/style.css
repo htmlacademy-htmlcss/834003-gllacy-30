@@ -41,10 +41,9 @@
   font-weight: 700;
   color: var(--basic-white);
 
-  background: url(../img/slide/big-ice-cream.png) 50% -30%,
-              url(../img/fons/fon-ice-body.png) top center,
+  background: url(../img/slide/big-ice-cream.png) no-repeat 50% -30%,
+              url(../img/fons/fon-ice-body.png) no-repeat top center,
               var(--basic-dark-grayish-cyan);
-  background-repeat: no-repeat;
 
 
   min-height: 100%;
