@@ -9,6 +9,8 @@
   --basic-grayish-yellow: #d3d3d2;
   --basic-light-grayish-yellow: #f8f7f4;
   --basic-light-grayish-lime-green: #fbfcfb;
+  --basic-dark-grayish-blue: #8996a6;
+  --basic-dark-grayish-orange: #9d8b84;
   --basic-bright-blue: #2e88e4;/*курсор внутри поля*/
   --basic-strong-red: #d84732;
   --basic-bright-bright-red: #e1613e;
@@ -44,8 +46,6 @@
   line-height: 22px;
   font-weight: 700;
   color: var(--basic-white);
- /*background: url(../img/slide/slider-item-1.png) no-repeat top center,
-              var(--basic-dark-grayish-cyan);*/
 
 
   min-height: 100%;
@@ -83,10 +83,23 @@ img {
 
 .site-wrapper {
   min-width: 1200px;
-  background-color: var(--basic-dark-grayish-cyan);
-  background-image: url(../img/slide/slider-item-1.png);
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.site-wrapper-1 {
+  background-color: var(--basic-dark-grayish-cyan);
+  background-image: url(../img/slide/slider-item-1.png);
+}
+
+.site-wrapper-2 {
+  background-color: var(--basic-dark-grayish-blue);
+  background-image: url(../img/slide/slider-item-2.png);
+}
+
+.site-wrapper-3 {
+  background-color: var(--basic-dark-grayish-orange);
+  background-image: url(../img/slide/slider-item-3.png);
 }
 
 /*   Content wrapper   */
@@ -456,21 +469,18 @@ textarea[name="comment"]:hover {
   outline: none;
 }
 
-/* Container */
 
-.main-container {
-  min-width: 1200px;
-  margin: 0 auto;
-}
 
 /*Слайд*/
+
+
 
 .slider {
   position: relative;
   width: 1146px;
   margin: 0 auto;
   margin-bottom: 41px;
-  padding-top: 310px;
+  padding-top: 290px;
   text-align: center;
 }
 
@@ -478,6 +488,14 @@ textarea[name="comment"]:hover {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
 }
 
 .slide-title {
@@ -520,7 +538,7 @@ textarea[name="comment"]:hover {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 20px;
   left: 0;
   z-index: 20;
   display: flex;
@@ -536,6 +554,10 @@ textarea[name="comment"]:hover {
   border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls .current {
+  background-color: var(--basic-white);
 }
 
 /* Листалка */
@@ -963,8 +985,6 @@ textarea[name="comment"]:hover {
 
 .main-footer {
   display: grid;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .main-footer h2 {
@@ -983,7 +1003,7 @@ textarea[name="comment"]:hover {
 }
 
 .footer-social {
-  margin: 15px 0 35px 29px;
+  margin: 15px 0 35px 0;
   padding: 0;
 }
 
@@ -1029,7 +1049,6 @@ textarea[name="comment"]:hover {
 }
 
 .footer-copyright {
-  margin-right: 27px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
