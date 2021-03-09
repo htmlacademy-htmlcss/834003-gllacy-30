@@ -536,6 +536,8 @@ textarea[name="comment"]:hover {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
+/* Листалка */
+
 .slider-controls {
   position: absolute;
   bottom: 20px;
@@ -560,31 +562,6 @@ textarea[name="comment"]:hover {
   background-color: var(--basic-white);
 }
 
-/* Листалка */
-/*
-.circle {
-  border: 2px solid var(--basic-white);
-  border-radius: 50%;
-  height: 21px;
-  width: 21px;
-}
-
-.circle:hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-
-.circle:focus,
-.circle:active {
-  background: var(--basic-white);
-}
-
-.current-slide-item,
-.current-slide-item:hover,
-.current-slide-item:active,
-.current-slide-item:focus {
-  background: var(--basic-white);
-}
-*/
 /*Предложения*/
 
 .proposal {
@@ -650,8 +627,8 @@ textarea[name="comment"]:hover {
 }
 
 .tovar-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
