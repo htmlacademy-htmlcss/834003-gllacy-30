@@ -77,45 +77,75 @@
              <li><a href="#">Сливочное</a></li>
            </ul>
            <h1>Сливочное мороженое</h1>
-           <section class="choice-catalog">
+           <section class="filters">
              <h2>Выбор мороженого</h2>
-              <form class="properties-of-ice-cream-catalog" method="POST" action="https://echo.htmlacademy.ru">
-               <fieldset class="choice-of-composition sorting-catalog">
-                 <legend class="top-title">Сортировка:</legend>
-                   <select name="popularity-catalog">
-                     <option value="by-popularity">по популярности</option>
-                     <option value="cheap-ones-first">сначала недорогие</option>
-                     <option value="dear-ones-first">сначала дорогие</option>
-                     <option value="fatness">по жирности</option>
-                   </select>
+              <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
+               <fieldset>
+                 <legend>Сортировка:</legend>
+                 <ul class="choice-of-filter">
+                   <li class="sorting-catalog">
+                     <select name="popularity-catalog">
+                       <option value="by-popularity">по популярности</option>
+                       <option value="cheap-ones-first">сначала недорогие</option>
+                       <option value="dear-ones-first">сначала дорогие</option>
+                       <option value="fatness">по жирности</option>
+                     </select>
+                   </li>
+                  </ul>
                </fieldset>
-               <fieldset class="choice-of-composition price-sorting-catalog">
-                 <legend class="top-title">Цена: 100 ₽ – 500 ₽</legend>
-                   <input type="range" min="100" max="500">
+               <fieldset>
+                 <legend>Цена: 100 ₽ – 500 ₽</legend>
+                 <ul class="choice-of-filter">
+                   <li class="price-sorting-catalog">
+                     <input type="range" min="100" max="500">
+                   </li>
+                 </ul>
                </fieldset>
-               <fieldset class="choice-of-composition fat-sorting-catalog">
-                 <legend class="top-title">Жирность:</legend>
-                   <input type="radio" name="greasy-ice-cream" value="zero" id="fat-zero">
-                   <label for="fat-zero"> 0%</label>
-                   <input type="radio" name="greasy-ice-cream" value="up-to-ten" id="fat-to-ten" checked>
-                   <label for="fat-to-ten"> до 10%</label>
-                   <input type="radio" name="greasy-ice-cream" value="up-to-thirty" id="fat-to-thirty">
-                   <label for="fat-to-thirty"> до 30%</label>
-                   <input type="radio" name="greasy-ice-cream" value="above-thirty" id="fat-above-thirty">
-                   <label for="fat-above-thirty"> выше 30%</label>
+               <fieldset>
+                 <legend>Жирность:</legend>
+                 <ul class="choice-of-filter fat">
+                   <li class="fat-sorting-catalog">
+                     <input type="radio" name="greasy-ice-cream" value="zero" id="fat-zero">
+                     <label for="fat-zero"> 0%</label>
+                   </li>
+                   <li class="fat-sorting-catalog">
+                     <input type="radio" name="greasy-ice-cream" value="up-to-ten" id="fat-to-ten" checked>
+                     <label for="fat-to-ten"> до 10%</label>
+                   </li>
+                   <li class="fat-sorting-catalog">
+                     <input type="radio" name="greasy-ice-cream" value="up-to-thirty" id="fat-to-thirty">
+                     <label for="fat-to-thirty"> до 30%</label>
+                   </li>
+                   <li class="fat-sorting-catalog">
+                     <input type="radio" name="greasy-ice-cream" value="above-thirty" id="fat-above-thirty">
+                     <label for="fat-above-thirty"> выше 30%</label>
+                   </li>
+                  </ul>
                </fieldset>
-               <fieldset class="choice-of-composition sorting-of-fillers-catalog">
-                 <legend class="top-title">Наполнители:</legend>
-                   <input type="checkbox" name="chocolate" id="chocolate-ice-cream" checked>
+               <fieldset>
+                 <legend class="filler">Наполнители:</legend>
+                 <ul class="choice-of-filter sorting-of-fillers-catalog">
+                   <li class="fat-sorting-catalog">
+                     <input type="checkbox" name="chocolate" id="chocolate-ice-cream" checked>
                      <label for="chocolate-ice-cream">шоколадные</label>
+                   </li>
+                   <li class="fat-sorting-catalog">
                      <input type="checkbox" name="sugar" id="powder" checked>
                      <label for="powder">сахарные присыпки</label>
+                   </li>
+                   <li class="fat-sorting-catalog">
                      <input type="checkbox" name="fruit" id="fruits">
                      <label for="fruits">фрукты</label>
+                   </li>
+                   <li class="fat-sorting-catalog">
                      <input type="checkbox" name="syrup" id="syrups">
                      <label for="syrups">сиропы</label>
+                   </li>
+                   <li class="fat-sorting-catalog">
                      <input type="checkbox" name="jam" id="jams">
                      <label for="jams">джемы</label>
+                   </li>
+                 </ul>
                </fieldset>
                <button type="submit">Применить</button>
              </form>
