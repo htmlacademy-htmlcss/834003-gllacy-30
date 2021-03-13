@@ -399,22 +399,30 @@
        </footer>
        <section class="modal modal-login">
          <h2>Личный кабинет</h2>
-         <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-           <input type="email" name="login" placeholder="email@example.com"><br>
-           <input type="password" name="password" placeholder="••••••"><br>
-           <button class="button modal-login-button" type="button">Войти</button>
-           <a class="restor" href="#">Забыли пароль?</a><br>
-           <a class="register" href="#">Новая регистрация</a>
-         </form>
+         <div class="wrapping-modal">
+           <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+             <input type="email" name="login" placeholder="email@example.com">
+             <input type="password" name="password" placeholder="••••••">
+             <div class="registration">
+               <button class="button modal-login-button" type="button">Войти</button>
+               <div>
+                 <a class="restor" href="#">Забыли пароль?</a>
+                 <a class="register" href="#">Новая регистрация</a>
+               </div>
+             </div>
+           </form>
+         </div>
        </section>
        <section class="modal modal-contact">
-         <h2>Форма обратной связи</h2>
-         <form action="https://echo.htmlacademy.ru" method="POST">
-           <input type="text" name="username" placeholder="Имя Фамилия"><br>
-           <input type="email" placeholder="email@example.com"><br>
-           <textarea name="comment" rows="10" cols="40" placeholder="В свободной форме"></textarea>
-           <button class="button modal-contact-button" type="submit">Отправить</button>
-         </form>
+         <h2>Мы обязательно вам ответим!</h2>
+         <div class="feedback-wrapper">
+           <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+             <input type="text" name="username" placeholder="Имя Фамилия">
+             <input type="email" placeholder="email@example.com">
+             <textarea name="comment" rows="10" cols="50" placeholder="В свободной форме"></textarea>
+             <button class="button modal-contact-button" type="submit">Отправить</button>
+           </form>
+         </div>
        </section>
       </div>
     </div>
