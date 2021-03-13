@@ -1130,8 +1130,20 @@ label {
   border-radius: 4px;
 }
 
+.wrapping-modal {
+  width: 241px;
+  margin: 0 auto;
+}
+
 .modal h2 {
+  margin: 0;
+  padding: 0;
   color: var(--basic-very-dark-gray);
+}
+
+.modal .login-form {
+  display: grid;
+  gap: 20px;
 }
 
 .modal-login input {
@@ -1157,11 +1169,28 @@ label {
   color: var(--basic-very-dark-gray);
 }
 
+.registration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .modal-contact {
+  display: grid;
+  gap: 10px;
   width: 477px;
   height: 441px;
   background: var(--basic-light-grayish-yellow);
   border-radius: 6px;
+  margin-top: 30px;
+}
+
+.modal-contact h2 {
+  padding: 20px 0 10px 23px;
+}
+
+.feedback-wrapper {
+  width: 428px;
+  margin: 0 auto;
 }
 
 .modal-contact input {
@@ -1181,6 +1210,11 @@ label {
 .modal-contact-button {
   width: 140px;
   padding: 12px 0;
+  justify-self: end;
+}
+
+.modal ::placeholder {
+  padding-left: 10px;
 }
 
 /* Table */
