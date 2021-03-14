@@ -743,6 +743,7 @@ label {
 
 .normal-state .text {
   margin: 0 auto;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -758,8 +759,8 @@ label {
 .hidden-button {
   width: 200px;
   padding: 25px 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hidden-button .button {
