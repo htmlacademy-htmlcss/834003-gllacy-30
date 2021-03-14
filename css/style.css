@@ -702,7 +702,6 @@ label {
 .items {
   position: relative;
   width: 286px;
-  /*width: 267px;*/
   min-height: 324px;
   margin-bottom: 40px;
   list-style: none;
@@ -711,7 +710,6 @@ label {
 }
 
 .items:hover {
-  /*width: 293px;*/
   margin-right: 0;
   background: var(--basic-border-bottom);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
@@ -744,7 +742,6 @@ label {
 }
 
 .normal-state .text {
-  margin: 0;
   margin: 0 auto;
   text-align: center;
 }
