@@ -410,7 +410,7 @@ textarea[name="comment"]:hover {
   font-size: 16px;
   line-height: 18px;
   outline: 5px solid #2e88e4;
-  offset: -5px;
+  outline-offset: -5px;
   margin-bottom: 40px;
 }
 
@@ -419,7 +419,7 @@ textarea[name="comment"]:hover {
   flex-wrap: wrap;
   width: 869px;
   outline: 4px solid #696969;
-  offset: -4px;
+  outline-offset: -4px;
 }
 
 .filter fieldset {
@@ -692,7 +692,7 @@ label {
   margin: 0;
 }
 
-.tovar-list p {
+.tovar-list .weight {
   position: absolute;
   font-size: 45px;
   line-height: 45px;
@@ -701,21 +701,17 @@ label {
 
 .items {
   position: relative;
-  width: 267px;
+  width: 286px;
+  /*width: 267px;*/
   min-height: 324px;
-  margin-right: 26px;
   margin-bottom: 40px;
   list-style: none;
   outline: 1px solid #696969;
   outline-offset: -1px;
 }
 
-.items:nth-child(4n) {
-  margin-right: 0;
-}
-
 .items:hover {
-  width: 293px;
+  /*width: 293px;*/
   margin-right: 0;
   background: var(--basic-border-bottom);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
@@ -726,13 +722,11 @@ label {
   border-radius:50%;
 }
 
-.items a  {
+.items a {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
-  border-bottom: 1px solid var(--basic-border-bottom);
-  padding-bottom: 2px;
   color: var(--basic-white);
 }
 
@@ -745,10 +739,19 @@ label {
   display: flex;
   flex-wrap: wrap;
   width: 267px;
+  margin: 0 auto;
+  margin-top: 6px;
 }
 
-.normal-state:hover {
-  margin: 5px 15px 0 15px;
+.normal-state .text {
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text b {
+  border-bottom: 1px solid var(--basic-border-bottom);
+  padding-bottom: 2px;
 }
 
 .hit {
