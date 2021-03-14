@@ -410,7 +410,7 @@ textarea[name="comment"]:hover {
   font-size: 16px;
   line-height: 18px;
   outline: 5px solid #2e88e4;
-  offset: -5px;
+  outline-offset: -5px;
   margin-bottom: 40px;
 }
 
@@ -419,7 +419,7 @@ textarea[name="comment"]:hover {
   flex-wrap: wrap;
   width: 869px;
   outline: 4px solid #696969;
-  offset: -4px;
+  outline-offset: -4px;
 }
 
 .filter fieldset {
