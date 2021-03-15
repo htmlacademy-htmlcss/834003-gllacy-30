@@ -746,6 +746,7 @@ label {
 }
 
 .text b {
+  font-weight: inherit;
   border-bottom: 1px solid var(--basic-border-bottom);
   padding-bottom: 2px;
 }
@@ -760,6 +761,10 @@ label {
   margin: 0 auto;
   margin-bottom: 3px;
   text-align: center;
+}
+
+.last-button {
+  margin-top: 22px;
 }
 
 .hidden-button .button {
